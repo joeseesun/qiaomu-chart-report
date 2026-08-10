@@ -1,0 +1,41 @@
+interface:
+  display_name: "Qiaomu Chart Report"
+  short_description: "用 ECharts 与 D3 把数据做成清晰、有趣的 HTML 报告和截图"
+  default_prompt: "Use $qiaomu-chart-report to turn my text, Markdown, CSV, JSON, tables, research, or statistics into a self-contained evidence-led HTML chart report. Unless I explicitly specify another brand or visual reference, use the bundled Vercel/Geist-inspired monochrome page shell: white background, near-black text, neutral gray hierarchy, tight sans-serif typography, crisp 1px borders, 8px radii, restrained grid, no cream editorial palette, serif hero, colorful card wall, gradient, glass effect, or heavy shadow. Keep the data layer independent: charts may use coherent categorical, sequential, diverging, and semantic colors, but default fills must remain clean solid colors without globally applied decal textures. Build a report plan first, keep facts and computed metrics traceable, and choose the visual grammar by the data relationship. Use pinned Apache ECharts recipes for most charts and D3 recipes only for specialized layouts. Complex visuals must pass static-screenshot, accessibility, and mobile-degradation gates. Inline only the selected offline runtime, call QiaomuCharts.ready(), run the audit, render and inspect desktop/mobile PNGs, and deliver all artifacts."
+  examples:
+    - "把这份 CSV 做成一份带图表的 HTML 统计报告和截图"
+    - "将这篇分析网页化，重点突出结论和证据"
+    - "生成一个清晰表达年度趋势的单页 HTML 数据故事"
+    - "把这份 Markdown 报告美化成可分享网页，并给我桌面和手机截图"
+    - "这组流向数据用桑基图做成 HTML 报告，移动端换成可读的分阶段视图"
+    - "用蜂群图和山脊图比较不同用户组的分布，并生成网页截图"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets: ["openai", "claude", "generic", "agent-skills-compatible"]
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    generated_claims: "evidence-bound"
+  permissions:
+    network: "off by default; only user-authorized remote data/assets"
+    file_write: "user-approved output directory and temporary browser profile"
+    subprocess: "Python audit and isolated local Chrome/Chromium screenshot renderer"
+    interactive: "only when a missing data definition would materially change the result"
+  degradation:
+    no_chrome: "deliver audited HTML and report screenshot rendering as blocked"
+    no_data_tool: "use available local tooling and disclose unverified calculations"
+    remote_assets_blocked: "replace with local/system assets or disclose missing rendering evidence"
+gates:
+  production:
+    - "evidence ledger and report plan"
+    - "self-contained semantic HTML"
+    - "static audit passes"
+    - "desktop and mobile screenshots exist"
+    - "screenshots opened and visually checked"
+    - "data scope and missing evidence disclosed"

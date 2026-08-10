@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN" data-qiaomu-style="vercel-monochrome">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>一季度运营观察</title>
+  <style>
+    :root {
+      --ink: #171717;
+      --muted: #666666;
+      --paper: #ffffff;
+      --surface: #ffffff;
+      --accent: #000000;
+      --support: #525252;
+      --rule: #eaeaea;
+      --max: 1180px;
+      --reading: 720px;
+      --radius: 8px;
+      --shadow: none;
+      --display-leading-latin: 1.02;
+      --display-leading-cjk: 1.12;
+      --display-tracking-latin: -.065em;
+      --display-tracking-cjk: -.035em;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); color: var(--ink); font-family: "Geist", "Geist Sans", ui-sans-serif, system-ui, -apple-system, "PingFang SC", sans-serif; -webkit-font-smoothing: antialiased; }
+    body { margin: 0; line-height: 1.7; }
+    .shell { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+    header { padding: 72px 0 52px; border-bottom: 1px solid var(--rule); }
+    .eyebrow { margin: 0 0 18px; color: var(--muted); font-family: "Geist Mono", ui-monospace, monospace; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+    h1 { max-width: 920px; margin: 0; font-size: clamp(48px, 7vw, 88px); font-weight: 650; line-height: var(--display-leading-latin); letter-spacing: var(--display-tracking-latin); }
+    :where(:lang(zh), :lang(ja), :lang(ko)) h1 { line-height: var(--display-leading-cjk); letter-spacing: var(--display-tracking-cjk); }
+    .dek { max-width: var(--reading); margin: 28px 0 0; color: var(--muted); font-size: clamp(18px, 2vw, 23px); }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 30px; color: var(--muted); font-size: 13px; }
+    main { padding: 48px 0 80px; }
+    .summary { display: grid; grid-template-columns: 1.3fr .7fr; gap: 24px; align-items: stretch; }
+    .finding { padding: 34px; background: var(--ink); color: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .finding h2 { margin: 0 0 18px; max-width: 720px; font-size: clamp(28px, 4vw, 44px); font-weight: 600; line-height: 1.12; letter-spacing: -.035em; }
+    .finding p { margin: 0; color: #d7dcd9; }
+    .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .kpi { padding: 22px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
+    .kpi strong { display: block; font-size: 34px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .kpi span { color: var(--muted); font-size: 13px; }
+    section { margin-top: 72px; }
+    .section-head { display: grid; grid-template-columns: 190px 1fr; gap: 24px; margin-bottom: 30px; }
+    .section-head .label { color: var(--support); font-size: 13px; font-weight: 750; letter-spacing: .08em; }
+    h2 { margin: 0; font-size: clamp(30px, 4vw, 48px); font-weight: 600; line-height: 1.08; letter-spacing: -.04em; }
+    .chart { padding: 34px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
+    .chart-title { display: flex; justify-content: space-between; gap: 22px; align-items: baseline; margin-bottom: 28px; }
+    .chart-title h3 { margin: 0; font-size: 18px; }
+    .chart-title p { margin: 0; color: var(--muted); font-size: 13px; }
+    .bars { display: grid; gap: 18px; }
+    .bar-row { display: grid; grid-template-columns: 80px 1fr 62px; gap: 14px; align-items: center; }
+    .bar-row span { color: var(--muted); font-size: 14px; }
+    .track { height: 13px; background: #e7e2d8; border-radius: 999px; overflow: hidden; }
+    .fill { height: 100%; width: var(--value); background: var(--support); border-radius: inherit; }
+    .bar-row strong { text-align: right; font-variant-numeric: tabular-nums; }
+    figcaption { margin-top: 22px; color: var(--muted); font-size: 12px; }
+    .notes { max-width: var(--reading); }
+    .notes p { font-size: 18px; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); }
+    table { width: 100%; min-width: 680px; border-collapse: collapse; }
+    caption { padding: 22px 24px 10px; text-align: left; font-weight: 750; }
+    th, td { padding: 14px 24px; border-top: 1px solid var(--rule); text-align: left; }
+    th { color: var(--muted); font-size: 12px; letter-spacing: .05em; }
+    td:not(:first-child), th:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+    .method { padding-top: 32px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+    a { color: currentColor; text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 760px) {
+      .shell { width: min(calc(100% - 28px), var(--max)); }
+      header { padding: 46px 0 36px; }
+      h1 { font-size: 48px; }
+      .summary { grid-template-columns: 1fr; }
+      .finding, .chart { padding: 24px; }
+      .kpi { padding: 18px; }
+      .section-head { grid-template-columns: 1fr; gap: 8px; }
+      section { margin-top: 54px; }
+      .chart-title { display: block; }
+      .chart-title p { margin-top: 6px; }
+      .bar-row { grid-template-columns: 54px 1fr 52px; gap: 9px; }
+      .table-wrap { overflow: visible; border: 0; background: transparent; }
+      table { min-width: 0; }
+      thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+      tbody { display: grid; gap: 12px; }
+      tr { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; padding: 18px; background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; }
+      td, td:not(:first-child) { display: flex; justify-content: space-between; gap: 12px; padding: 0; border: 0; text-align: right; }
+      td::before { content: attr(data-label); color: var(--muted); font-size: 12px; font-weight: 650; text-align: left; }
+      td:first-child { grid-column: 1 / -1; padding-bottom: 10px; border-bottom: 1px solid var(--rule); font-weight: 750; }
+      caption { padding: 0 0 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+    @media print { body { background: #fff; } .shell { width: 100%; } .finding, .chart, .kpi { box-shadow: none; break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <p class="eyebrow">Quarterly Operations Review</p>
+      <h1>增长还在继续，但交付速度正在拖累复购</h1>
+      <p class="dek">一季度新增订单增长 18%，准时交付率却连续三个月下降。真正需要优先处理的不是获客，而是高峰期履约。</p>
+      <div class="meta"><span>范围：2026 年 1–3 月</span><span>单位：订单、百分比、天</span><span>更新：2026-04-05</span></div>
+    </div>
+  </header>
+  <main class="shell">
+    <div class="summary">
+      <article class="finding">
+        <h2>三月订单达到季度峰值，同时准时率降至 84%</h2>
+        <p>订单量与延迟同时上升，提示当前瓶颈更可能位于履约环节，而非需求不足。</p>
+      </article>
+      <div class="kpis" aria-label="关键指标">
+        <div class="kpi"><strong>3,540</strong><span>季度订单</span></div>
+        <div class="kpi"><strong>+18%</strong><span>同比增长</span></div>
+        <div class="kpi"><strong>87%</strong><span>季度准时率</span></div>
+        <div class="kpi"><strong>2.8天</strong><span>平均交付周期</span></div>
+      </div>
+    </div>
+
+    <section aria-labelledby="trend-title">
+      <div class="section-head"><span class="label">01 / 核心证据</span><h2 id="trend-title">订单越接近峰值，准时交付越吃力</h2></div>
+      <figure class="chart">
+        <div class="chart-title"><h3>各月准时交付率</h3><p>目标线：90% · 单位：%</p></div>
+        <div class="bars" role="img" aria-label="一月准时交付率91%，二月87%，三月84%">
+          <div class="bar-row"><span>一月</span><div class="track"><div class="fill" style="--value:91%"></div></div><strong>91%</strong></div>
+          <div class="bar-row"><span>二月</span><div class="track"><div class="fill" style="--value:87%"></div></div><strong>87%</strong></div>
+          <div class="bar-row"><span>三月</span><div class="track"><div class="fill" style="--value:84%"></div></div><strong>84%</strong></div>
+        </div>
+        <figcaption>Source：评估夹具中的季度运营汇总。准时率 = 承诺日期内完成的订单 ÷ 已交付订单；此图用于渲染回归，不代表真实业务数据。</figcaption>
+      </figure>
+    </section>
+
+    <section class="notes" aria-labelledby="meaning-title">
+      <div class="section-head"><span class="label">02 / 如何理解</span><h2 id="meaning-title">先修复峰值履约，再扩大获客</h2></div>
+      <p>三月新增订单最多，但交付表现最弱。建议先按仓库、渠道与高峰日期拆分延迟订单，确认瓶颈是否集中在少数环节，再决定补人、调度或库存前置。</p>
+      <p>这是一条基于趋势的运营建议，不是因果结论；当前夹具缺少仓库、人力和库存明细。</p>
+    </section>
+
+    <section aria-labelledby="detail-title">
+      <div class="section-head"><span class="label">03 / 明细</span><h2 id="detail-title">增长与履约需要放在同一张表里看</h2></div>
+      <div class="table-wrap">
+        <table>
+          <caption>月度运营摘要</caption>
+          <thead><tr><th>月份</th><th>订单数</th><th>环比</th><th>准时率</th><th>平均周期（天）</th></tr></thead>
+          <tbody>
+            <tr><td data-label="月份">一月</td><td data-label="订单数">1,020</td><td data-label="环比">—</td><td data-label="准时率">91%</td><td data-label="平均周期（天）">2.3</td></tr>
+            <tr><td data-label="月份">二月</td><td data-label="订单数">1,160</td><td data-label="环比">+13.7%</td><td data-label="准时率">87%</td><td data-label="平均周期（天）">2.8</td></tr>
+            <tr><td data-label="月份">三月</td><td data-label="订单数">1,360</td><td data-label="环比">+17.2%</td><td data-label="准时率">84%</td><td data-label="平均周期（天）">3.2</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <h2 id="method-title">口径与限制</h2>
+      <p><strong>数据源：</strong>本 Skill 的记录型评估夹具，不是生产数据。<strong>计算：</strong>订单合计 3,540；准时率按月度已交付订单口径展示。<strong>限制：</strong>没有订单级明细，不能验证延迟的因果来源；真实使用时必须替换为可追溯数据并抽样复算。<strong>Missing evidence：</strong>统计正确性独立复核与人工盲评。</p>
+    </section>
+  </main>
+</body>
+</html>

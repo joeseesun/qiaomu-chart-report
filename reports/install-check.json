@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "checked_at": "2026-08-10",
+  "installer": "npx skills add",
+  "scope": "isolated temporary git project",
+  "agent": "codex",
+  "mode": "copy",
+  "selected_skill": "qiaomu-chart-report",
+  "version": "1.0.0",
+  "installed_entrypoint": ".agents/skills/qiaomu-chart-report/SKILL.md",
+  "verified_chart_assets": [
+    "assets/chart-recipes.js",
+    "assets/vendor/echarts-6.1.0/echarts.min.js",
+    "assets/vendor/d3-7.9.0/d3.min.js",
+    "reports/chart-gallery-mobile.png"
+  ],
+  "vendor_integrity": "pass",
+  "global_state_modified": false
+}

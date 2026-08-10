@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "file": "reports/chart-gallery.html",
+  "bytes": 1435263,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "required_structure": {
+      "doctype": true,
+      "lang": true,
+      "viewport": true,
+      "title": true,
+      "main": true,
+      "css_tokens": true
+    },
+    "h1_count": 1,
+    "remote_resources": [],
+    "placeholder_patterns": [],
+    "images": {
+      "count": 0,
+      "with_alt": 0
+    },
+    "svg": {
+      "count": 0,
+      "with_semantics": 0
+    },
+    "charts": {
+      "count": 13,
+      "with_semantics": 13,
+      "chart_figures": 13,
+      "runtime_ready_hook": true
+    },
+    "tables": {
+      "count": 0,
+      "with_caption": 0
+    },
+    "responsive_and_print": {
+      "reduced_motion": true,
+      "print_styles": true,
+      "media_queries": 6
+    },
+    "style_profile": {
+      "profile": "vercel-monochrome",
+      "missing_required_values": [],
+      "forbidden_default_values": [],
+      "cjk_display_leading": {
+        "document_is_cjk": true,
+        "token": 1.12,
+        "language_selector_uses_token": true
+      },
+      "chart_color_separation": {
+        "chart_count": 13,
+        "palette_tokens": [
+          "#2563eb",
+          "#f28e2b",
+          "#0f9d7a",
+          "#d84a4a",
+          "#8b5cf6",
+          "#0891b2",
+          "#ca8a04",
+          "#db2777"
+        ],
+        "colorful_tokens": [
+          "#2563eb",
+          "#f28e2b",
+          "#0f9d7a",
+          "#d84a4a",
+          "#8b5cf6",
+          "#0891b2",
+          "#ca8a04",
+          "#db2777"
+        ],
+        "page_shell_remains_monochrome": true
+      },
+      "solid_chart_fill": {
+        "global_aria_decal_enabled": false,
+        "default_fill_policy": "solid"
+      }
+    },
+    "evidence_language": {
+      "source": true,
+      "limitations": true
+    }
+  }
+}

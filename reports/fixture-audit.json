@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "file": "evals/fixtures/quarterly-report.html",
+  "bytes": 11134,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "required_structure": {
+      "doctype": true,
+      "lang": true,
+      "viewport": true,
+      "title": true,
+      "main": true,
+      "css_tokens": true
+    },
+    "h1_count": 1,
+    "remote_resources": [],
+    "placeholder_patterns": [],
+    "images": {
+      "count": 0,
+      "with_alt": 0
+    },
+    "svg": {
+      "count": 0,
+      "with_semantics": 0
+    },
+    "charts": {
+      "count": 0,
+      "with_semantics": 0,
+      "chart_figures": 0,
+      "runtime_ready_hook": false
+    },
+    "tables": {
+      "count": 1,
+      "with_caption": 1
+    },
+    "responsive_and_print": {
+      "reduced_motion": true,
+      "print_styles": true,
+      "media_queries": 3
+    },
+    "style_profile": {
+      "profile": "vercel-monochrome",
+      "missing_required_values": [],
+      "forbidden_default_values": [],
+      "cjk_display_leading": {
+        "document_is_cjk": true,
+        "token": 1.12,
+        "language_selector_uses_token": true
+      },
+      "chart_color_separation": {
+        "chart_count": 0,
+        "palette_tokens": [],
+        "colorful_tokens": [],
+        "page_shell_remains_monochrome": true
+      },
+      "solid_chart_fill": {
+        "global_aria_decal_enabled": false,
+        "default_fill_policy": "solid"
+      }
+    },
+    "evidence_language": {
+      "source": true,
+      "limitations": true
+    }
+  }
+}

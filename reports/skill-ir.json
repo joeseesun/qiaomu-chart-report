@@ -1,0 +1,165 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-08-10",
+  "package": {
+    "name": "qiaomu-chart-report",
+    "version": "1.0.0",
+    "owner": "Qiaomu",
+    "maturity_tier": "production",
+    "lifecycle_stage": "public",
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "将文本、Markdown、CSV/JSON/表格数据、研究材料或统计结果制作成自包含 HTML 可视化网页、数据故事和统计报告，并渲染为经过检查的桌面端与移动端 PNG 截图。适用于“生成 HTML 报告”“把数据做成网页”“统计报告可视化”“网页化分析”“做一个清晰表达的单页网页”“有趣/高级图表”“桑基图、旭日图、蜂群图、山脊图、弦图、排名变化图”“HTML dashboard/report”“生成网页和截图”等请求。内置离线 Apache ECharts 与 D3、可复用复杂图表 recipes、事实可追溯、结论先行、图表语义选择、编辑式信息层级、响应式降级和真实浏览器截图。不要用于完整网站/应用开发、营销落地页、HTML 封面/信息卡、幻灯片、仅分析数据而不需要网页交付，或只截取现有网页。\n",
+    "job_to_be_done": "将文本、Markdown、CSV/JSON/表格数据、研究材料或统计结果制作成自包含 HTML 可视化网页、数据故事和统计报告，并渲染为经过检查的桌面端与移动端 PNG 截图。适用于“生成 HTML 报告”“把数据做成网页”“统计报告可视化”“网页化分析”“做一个清晰表达的单页网页”“有趣/高级图表”“桑基图、旭日图、蜂群图、山脊图、弦图、排名变化图”“HTML dashboard/report”“生成网页和截图”等请求。内置离线 Apache ECharts 与 D3、可复用复杂图表 recipes、事实可追溯、结论先行、图表语义选择、编辑式信息层级、响应式降级和真实浏览器截图。不要用于完整网站/应用开发、营销落地页、HTML 封面/信息卡、幻灯片、仅分析数据而不需要网页交付，或只截取现有网页。\n",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "把这份 CSV 做成带图表的 HTML 统计报告和桌面、手机截图",
+      "把这篇 Markdown 分析网页化，清晰表达结论并输出 PNG",
+      "生成一个自包含 HTML 数据故事，展示年度趋势和关键异常",
+      "把这些研究材料整理成可分享的网页报告和截图",
+      "Create a responsive HTML report with charts from this JSON and render desktop and mobile screenshots.",
+      "Turn this table into a clear, evidence-led data story in a single HTML file.",
+      "做一份结论先行、图表可读的季度统计网页报告",
+      "将调查结果做成单页网页可视化，并提供全页截图",
+      "把用户来源到转化的数据做成桑基图 HTML 报告和移动截图",
+      "用蜂群图和山脊图比较这些分布，输出自包含网页",
+      "Create an HTML data story with a bump chart and chord diagram, plus responsive screenshots."
+    ],
+    "should_not_trigger": [
+      "只分析这个 CSV，告诉我均值，不要网页",
+      "帮我开发一个带登录和数据库的完整 web app",
+      "为产品做一个营销落地页",
+      "把现有网站截个图，website screenshot only",
+      "做一张 16:9 的 HTML 封面图",
+      "Create a slide deck for the board meeting."
+    ],
+    "near_neighbor": [
+      "把这段内容做成小红书信息卡",
+      "审查当前网页的响应式问题，不要生成新报告",
+      "给我一个统计分析方法，不需要产物",
+      "把这个 HTML 转成 PDF"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references/open-source-chart-system.md",
+      "references/output-contract.md",
+      "references/report-design.md",
+      "references/vercel-monochrome-style.md"
+    ],
+    "scripts": [
+      "scripts/audit_report.py",
+      "scripts/embed_chart_lib.py",
+      "scripts/render_html.mjs",
+      "scripts/verify_vendor.py"
+    ],
+    "tests": [
+      "tests/__init__.py",
+      "tests/test_chart_report.py"
+    ],
+    "assets": [
+      "assets/styles/vercel-monochrome.css",
+      "assets/chart-recipes.js",
+      "assets/vendor/NOTICE.md",
+      "assets/vendor/d3-7.9.0/LICENSE",
+      "assets/vendor/d3-7.9.0/d3.min.js",
+      "assets/vendor/echarts-6.1.0/LICENSE",
+      "assets/vendor/echarts-6.1.0/echarts.min.js",
+      "assets/qiaomu-profile/qiaomu_avatar.jpeg",
+      "assets/qiaomu-profile/qiaomu_reward_qr.png",
+      "assets/qiaomu-profile/qiaomu_wechat_public_account_qr.jpg"
+    ],
+    "evals": [
+      "evals/fixtures/chart-gallery.template.html",
+      "evals/fixtures/quarterly-report.html",
+      "evals/output_cases.json",
+      "evals/trigger_cases.json"
+    ],
+    "reports": [
+      "reports/chart-gallery-audit.json",
+      "reports/chart-gallery-desktop.png",
+      "reports/chart-gallery-mobile.png",
+      "reports/chart-gallery.html",
+      "reports/chart-library-research.md",
+      "reports/chart-prior-art-candidates.json",
+      "reports/creation-handoff.md",
+      "reports/fixture-audit.json",
+      "reports/fixture-desktop.png",
+      "reports/fixture-mobile.png",
+      "reports/install-check.json",
+      "reports/output-evidence.json",
+      "reports/prior-art-candidates.json",
+      "reports/prior-art-research.md",
+      "reports/skill-ir.json",
+      "reports/trigger-eval.json",
+      "reports/vendor-integrity.json",
+      "reports/vercel-monochrome-decision.md",
+      "reports/visual-review.md"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {
+      "mode": "manual",
+      "paths": []
+    },
+    "execution": {
+      "context": "inline",
+      "shell": "bash"
+    },
+    "trust": {
+      "source_tier": "local",
+      "remote_inline_execution": "forbid",
+      "generated_claims": "evidence-bound"
+    },
+    "permissions": {
+      "network": "off by default; only user-authorized remote data/assets",
+      "file_write": "user-approved output directory and temporary browser profile",
+      "subprocess": "Python audit and isolated local Chrome/Chromium screenshot renderer",
+      "interactive": "only when a missing data definition would materially change the result"
+    },
+    "degradation": {
+      "no_chrome": "deliver audited HTML and report screenshot rendering as blocked",
+      "no_data_tool": "use available local tooling and disclose unverified calculations",
+      "remote_assets_blocked": "replace with local/system assets or disclose missing rendering evidence"
+    }
+  },
+  "gates": {
+    "production": [
+      "evidence ledger and report plan",
+      "self-contained semantic HTML",
+      "static audit passes",
+      "desktop and mobile screenshots exist",
+      "screenshots opened and visually checked",
+      "data scope and missing evidence disclosed"
+    ]
+  },
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

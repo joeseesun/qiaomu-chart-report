@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN" data-qiaomu-style="vercel-monochrome">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>乔木开源图表能力图库</title>
+  <!-- QIAOMU_STYLE:VERCEL_MONOCHROME -->
+  <style>
+    header,.gallery,footer { width:min(calc(100% - 48px),1320px); margin-inline:auto; }
+    header { padding:88px 0 48px; border-bottom:1px solid var(--rule); }
+    .eyebrow { color:var(--muted); font-family:var(--font-mono); font-size:11px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; }
+    h1 { max-width:980px; margin:16px 0 22px; font-size:clamp(48px,7vw,88px); font-weight:650; line-height:var(--display-leading-latin); letter-spacing:var(--display-tracking-latin); }
+    :where(:lang(zh), :lang(ja), :lang(ko)) h1 { line-height:var(--display-leading-cjk); letter-spacing:var(--display-tracking-cjk); }
+    .lead { max-width:760px; margin:0; color:var(--muted); font-size:19px; line-height:1.55; }
+    .meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+    .meta span { padding:5px 10px; border:1px solid var(--rule); border-radius:999px; color:var(--muted); font-family:var(--font-mono); font-size:11px; }
+    .gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; padding:38px 0 72px; }
+    figure { min-width:0; margin:0; padding:24px; background:var(--surface); border:1px solid var(--rule); border-radius:8px; }
+    figure:hover { border-color:var(--rule-strong); }
+    figure.wide { grid-column:1 / -1; }
+    .chart { width:100%; height:340px; }
+    .chart.tall { height:410px; }
+    figcaption { min-height:48px; margin-top:14px; padding-top:13px; border-top:1px solid var(--rule); color:var(--muted); font-size:12px; }
+    figcaption strong { color:var(--ink); }
+    footer { padding:30px 0 64px; border-top:1px solid var(--rule); color:var(--muted); font-size:13px; }
+    @media(max-width:760px){ header,.gallery,footer{width:calc(100% - 32px);} header{padding:52px 0 34px;} h1{font-size:47px;} .lead{font-size:17px;} .gallery{grid-template-columns:1fr;gap:14px;padding-top:26px;} figure,figure.wide{grid-column:auto;padding:18px;} .chart{height:320px;} .chart.tall{height:360px;} figcaption{min-height:0;} }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;}}
+    @media print{.gallery{display:block}figure{break-inside:avoid;margin-bottom:16px}}
+  </style>
+  <!-- QIAOMU_VENDOR:ECHARTS -->
+  <!-- QIAOMU_VENDOR:D3 -->
+  <!-- QIAOMU_CHART_RECIPES -->
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Open-source chart capability gallery</p>
+    <h1>图表可以有趣，但必须先讲清关系</h1>
+    <p class="lead">13 种经过数据条件约束的可复用图形：比较、变化、分布、周期、层级、流向与多维探索。所有样例离线、自包含，并接受桌面与移动截图回归。</p>
+    <div class="meta"><span>Apache ECharts 6.1.0</span><span>D3 7.9.0</span><span>SVG-first</span><span>synthetic fixture data</span></div>
+  </header>
+  <main class="gallery">
+    <figure data-qiaomu-chart-figure><div id="lollipop" class="chart" data-qiaomu-chart="lollipop" role="img" aria-label="六个渠道转化率的棒棒糖图"></div><figcaption><strong>适用：</strong>一个数值跨多个类别的精确排序；类别太多时改横向条形。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="dumbbell" class="chart" data-qiaomu-chart="dumbbell" role="img" aria-label="五个地区前后满意度对比的哑铃图"></div><figcaption><strong>适用：</strong>同一对象两个可比时点；超过两个时点改折线或 small multiples。</figcaption></figure>
+    <figure class="wide" data-qiaomu-chart-figure><div id="bump" class="chart" data-qiaomu-chart="bump" role="img" aria-label="四个产品六个月排名变化图"></div><figcaption><strong>适用：</strong>名次换位本身就是故事；端点直接标注，避免来回追图例。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="waterfall" class="chart" data-qiaomu-chart="waterfall" role="img" aria-label="季度利润贡献的瀑布图"></div><figcaption><strong>适用：</strong>正负贡献能够守恒到最终总量；不能加总时禁止使用。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="calendar" class="chart" data-qiaomu-chart="calendar-heatmap" role="img" aria-label="九十天活跃度日历热力图"></div><figcaption><strong>适用：</strong>日级连续性、周期和异常；数据稀疏时改普通时间序列。</figcaption></figure>
+    <figure class="wide" data-qiaomu-chart-figure><div id="sankey" class="chart tall" data-qiaomu-chart="sankey" role="img" aria-label="用户来源到行为再到结果的桑基图"></div><figcaption><strong>适用：</strong>非负、可守恒的流量；节点过多或有环时改分阶段表和条形图。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="sunburst" class="chart tall" data-qiaomu-chart="sunburst" role="img" aria-label="内容分类层级构成旭日图"></div><figcaption><strong>适用：</strong>根到叶的层级构成；长标签和深层级优先 icicle 或树表。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="treemap" class="chart tall" data-qiaomu-chart="treemap" role="img" aria-label="研发资源层级占比矩形树图"></div><figcaption><strong>适用：</strong>面积表达层级占比；相近值需精确比较时改排序条形。</figcaption></figure>
+    <figure class="wide" data-qiaomu-chart-figure><div id="river" class="chart" data-qiaomu-chart="theme-river" role="img" aria-label="三类话题半年热度主题河流图"></div><figcaption><strong>适用：</strong>多个主题随时间的相对盛衰；重要值不能只靠面积猜测。</figcaption></figure>
+    <figure class="wide" data-qiaomu-chart-figure><div id="parallel" class="chart" data-qiaomu-chart="parallel-coordinates" role="img" aria-label="八个模型五维指标的平行坐标图"></div><figcaption><strong>适用：</strong>多维轮廓和异常探索；精确读数应回到表格或点图。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="beeswarm" class="chart" data-qiaomu-chart="beeswarm" role="img" aria-label="两类用户任务时长分布蜂群图"></div><figcaption><strong>适用：</strong>保留每个观测值并显示聚集；大样本改 hexbin 或直方图。</figcaption></figure>
+    <figure data-qiaomu-chart-figure><div id="ridgeline" class="chart" data-qiaomu-chart="ridgeline" role="img" aria-label="四个月份任务时长分布山脊图"></div><figcaption><strong>适用：</strong>多组分布形状变化；高度不代表样本量，必须说明归一化。</figcaption></figure>
+    <figure class="wide" data-qiaomu-chart-figure><div id="chord" class="chart tall" data-qiaomu-chart="chord" role="img" aria-label="六个团队之间协作流量弦图"></div><figcaption><strong>适用：</strong>少量群体之间的双向关系密度；节点超过 8 个时改邻接热力图。</figcaption></figure>
+  </main>
+  <footer>本页数据均为合成评估夹具，不代表真实业务。图表选择规则、移动端降级与许可证见 Skill references 和 assets/vendor/NOTICE.md。</footer>
+  <script>
+    const E = QiaomuCharts.echarts;
+    QiaomuCharts.mountECharts("#lollipop", E.lollipop([{name:"自然搜索",value:7.8},{name:"邮件",value:6.4},{name:"推荐",value:9.1},{name:"活动",value:5.2},{name:"社媒",value:4.8},{name:"付费",value:3.9}], {title:"推荐渠道转化率最高",subtitle:"转化率 · %"}));
+    QiaomuCharts.mountECharts("#dumbbell", E.dumbbell([{name:"北区",start:64,end:81},{name:"东区",start:72,end:77},{name:"南区",start:58,end:76},{name:"西区",start:69,end:73},{name:"中区",start:61,end:79}], {title:"所有地区满意度都改善",subtitle:"一月 → 六月 · 分"}));
+    QiaomuCharts.mountECharts("#bump", E.bump(["1月","2月","3月","4月","5月","6月"],[{name:"Atlas",ranks:[1,1,2,2,1,1]},{name:"Beacon",ranks:[3,2,1,1,2,2]},{name:"Cedar",ranks:[2,3,3,4,4,3]},{name:"Delta",ranks:[4,4,4,3,3,4]}],{title:"Atlas 五月重新回到第一",subtitle:"月度活跃用户排名",maxRank:4}));
+    QiaomuCharts.mountECharts("#waterfall", E.waterfall([{name:"期初",value:120,total:true},{name:"新增",value:38},{name:"升级",value:16},{name:"流失",value:-27},{name:"成本",value:-12},{name:"期末",total:true}],{title:"新增与升级抵消了流失",subtitle:"季度利润贡献 · 万元"}));
+    const calendarData=[]; for(let i=0;i<90;i++){const date=new Date(2026,0,1+i), key=date.toISOString().slice(0,10), value=Math.max(0,Math.round(42+20*Math.sin(i/6)+12*Math.cos(i/13)+(i%17===0?30:0)));calendarData.push([key,value]);}
+    QiaomuCharts.mountECharts("#calendar", E.calendarHeatmap(calendarData,["2026-01-01","2026-03-31"],{title:"周末低谷与月中峰值清晰可见",subtitle:"每日活跃任务数",max:100}));
+    const sn=["搜索","推荐","直接访问","浏览","试用","购买","离开"].map(name=>({name})), sl=[{source:"搜索",target:"浏览",value:42},{source:"推荐",target:"浏览",value:31},{source:"直接访问",target:"试用",value:18},{source:"浏览",target:"试用",value:47},{source:"浏览",target:"离开",value:26},{source:"试用",target:"购买",value:38},{source:"试用",target:"离开",value:27}];
+    QiaomuCharts.mountECharts("#sankey", E.sankey(sn,sl,{title:"试用是转化路径的关键汇合点",subtitle:"来源 → 行为 → 结果 · 用户流量"}));
+    const hierarchy=[{name:"产品",children:[{name:"核心",value:28},{name:"协作",value:16},{name:"移动",value:10}]},{name:"内容",children:[{name:"教程",value:18},{name:"案例",value:12},{name:"研究",value:8}]},{name:"社区",children:[{name:"问答",value:11},{name:"活动",value:7}]}];
+    QiaomuCharts.mountECharts("#sunburst", E.sunburst(hierarchy,{title:"产品内容占据主要阅读时间",subtitle:"分类 → 子分类 · 小时"}));
+    QiaomuCharts.mountECharts("#treemap", E.treemap([{name:"平台",value:45,children:[{name:"基础设施",value:28},{name:"稳定性",value:17}]},{name:"体验",value:32,children:[{name:"编辑器",value:18},{name:"移动端",value:14}]},{name:"增长",value:23,children:[{name:"转化",value:13},{name:"传播",value:10}]}],{title:"平台与体验占研发资源的 77%",subtitle:"工作量占比"}));
+    const river=[]; ["2026-01-01","2026-02-01","2026-03-01","2026-04-01","2026-05-01","2026-06-01"].forEach((date,i)=>{river.push([date,[18,24,32,28,36,42][i],"Agent"]);river.push([date,[30,28,24,26,21,18][i],"模型"]);river.push([date,[12,16,14,22,26,31][i],"应用"]);});
+    QiaomuCharts.mountECharts("#river", E.themeRiver(river,{title:"讨论重心从模型转向 Agent 与应用",subtitle:"相对话题热度"}));
+    QiaomuCharts.mountECharts("#parallel", E.parallel([{name:"准确率",min:70,max:100},{name:"速度",min:40,max:100},{name:"成本",min:20,max:100},{name:"稳定性",min:60,max:100},{name:"易用性",min:50,max:100}],[[92,64,42,90,78],[88,82,68,84,91],[95,48,30,93,70],[84,91,76,79,88],[90,72,58,86,82],[87,86,71,81,93],[93,59,37,94,74],[89,79,62,88,86]],{title:"高准确率模型通常牺牲速度或成本",subtitle:"8 个模型 · 归一化指标"}));
+    const swarm=Array.from({length:72},(_,i)=>({name:`任务 ${i+1}`,group:i%3===0?"复杂":i%2===0?"常规":"轻量",value:Math.round(12+((i*37)%64)+9*Math.sin(i*1.7))}));
+    QiaomuCharts.d3.beeswarm("#beeswarm",swarm,{title:"多数任务集中在 35–65 秒",ariaLabel:"七十二个任务耗时蜂群分布"});
+    const ridge=["一月","二月","三月","四月"].map((name,j)=>({name,points:Array.from({length:28},(_,i)=>{const x=i*4,center=38+j*12;return{x,y:Math.exp(-Math.pow(x-center,2)/(2*Math.pow(13+j*2,2)))+.34*Math.exp(-Math.pow(x-(78-j*3),2)/240)}})}));
+    QiaomuCharts.d3.ridgeline("#ridgeline",ridge,{title:"任务时长分布逐月右移",ariaLabel:"四个月任务时长山脊分布"});
+    QiaomuCharts.d3.chord("#chord",[[0,12,4,7,3,2],[8,0,9,3,5,4],[5,7,0,11,2,6],[6,4,10,0,8,3],[2,6,3,7,0,9],[3,5,7,4,8,0]],["研究","产品","设计","工程","市场","客户"],{title:"跨团队协作以产品、工程和设计为中心",ariaLabel:"六个团队协作关系弦图"});
+    QiaomuCharts.ready();
+  </script>
+</body>
+</html>

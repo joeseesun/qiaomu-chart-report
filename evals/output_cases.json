@@ -1,0 +1,71 @@
+{
+  "evidence_type": "recorded_fixture",
+  "case": "quarterly-operations-report",
+  "prompt": "把季度运营数据做成结论先行的 HTML 报告，并生成桌面和移动截图。",
+  "input_files": ["evals/fixtures/quarterly-report.html"],
+  "baseline_output": "未记录；本次不主张 baseline 对比优势。",
+  "with_skill_output": [
+    "reports/fixture-audit.json",
+    "reports/fixture-desktop.png",
+    "reports/fixture-mobile.png"
+  ],
+  "assertions": [
+    "HTML audit exits 0 with no errors",
+    "desktop PNG exists and has PNG signature",
+    "mobile PNG exists and has PNG signature",
+    "report contains one h1, semantic main, units, source and limitations",
+    "report has no remote script, stylesheet, font or image dependency"
+  ],
+  "human_notes": [
+    "Desktop and mobile screenshots must be opened and checked for hierarchy, overflow, overlap and label readability.",
+    "Aesthetic superiority and statistical correctness are missing evidence without blind review and source-data recomputation."
+  ],
+  "chart_gallery_case": {
+    "evidence_type": "recorded_fixture",
+    "prompt": "整合开源图表库，生成包含多种有趣图表的响应式 HTML 图库和截图。",
+    "input_files": [
+      "evals/fixtures/chart-gallery.template.html",
+      "assets/chart-recipes.js",
+      "assets/vendor/echarts-6.1.0/echarts.min.js",
+      "assets/vendor/d3-7.9.0/d3.min.js"
+    ],
+    "with_skill_output": [
+      "reports/chart-gallery.html",
+      "reports/chart-gallery-audit.json",
+      "reports/chart-gallery-desktop.png",
+      "reports/chart-gallery-mobile.png",
+      "reports/vendor-integrity.json"
+    ],
+    "assertions": [
+      "vendor SHA-256 and license checks pass",
+      "HTML is self-contained and has zero remote resources",
+      "13 of 13 chart containers have role/ARIA and figure captions",
+      "13 of 13 charts reach runtime ready state without captured errors",
+      "desktop and mobile full-page PNGs render without clipping"
+    ],
+    "human_notes": [
+      "Desktop and mobile gallery screenshots were opened; D3 chord overflow found in the first desktop pass was fixed by constraining SVG height to the chart container.",
+      "Independent preference testing and real-dataset statistical review remain missing evidence."
+    ]
+  },
+  "default_style_case": {
+    "evidence_type": "recorded_fixture",
+    "prompt": "按默认风格生成 HTML 报告，不指定额外主题。",
+    "input_files": [
+      "assets/styles/vercel-monochrome.css",
+      "evals/fixtures/quarterly-report.html",
+      "evals/fixtures/chart-gallery.template.html"
+    ],
+    "assertions": [
+      "HTML declares data-qiaomu-style=vercel-monochrome",
+      "required white/near-black/gray tokens are present",
+      "default fixtures do not contain cream, green-red editorial, gradient, glass, or heavy-shadow defaults",
+      "Latin and CJK display leading use separate tokens; CJK defaults to 1.12 and never falls below 1.08",
+      "desktop and mobile multi-line Chinese titles have visible vertical breathing room without glyph collision",
+      "page shell remains monochrome while chart recipes expose a distinct multi-color data palette",
+      "chart color is reinforced by labels, line style, texture, shape, or ordering and is not the only encoding",
+      "global ECharts aria decal is disabled so default chart fills render as clean solid colors without automatic hatching",
+      "desktop and mobile screenshots are opened after restyling"
+    ]
+  }
+}
