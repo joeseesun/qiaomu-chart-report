@@ -1,0 +1,1633 @@
+{
+  "ok": true,
+  "complete": true,
+  "researched_at": "2026-08-07",
+  "queries": [
+    "html report visualization",
+    "data visualization dashboard report",
+    "webpage screenshot html"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "html report visualization",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 17,
+      "skillsmp_candidates": 6
+    },
+    {
+      "query": "data visualization dashboard report",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 17,
+      "skillsmp_candidates": 8
+    },
+    {
+      "query": "webpage screenshot html",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 12,
+      "skillsmp_candidates": 10
+    }
+  ],
+  "candidate_family_count": 68,
+  "candidates": [
+    {
+      "family_key": "elastic/agent-skills:kibana-dashboards",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "elastic/agent-skills",
+        "skill_name": "kibana-dashboards",
+        "family_key": "elastic/agent-skills:kibana-dashboards",
+        "skills_sh_installs": 2600,
+        "skills_sh_installs_display": "2.6K",
+        "skills_sh_url": "https://skills.sh/elastic/agent-skills/kibana-dashboards"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "borghei/claude-skills:business-intelligence",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "borghei/claude-skills",
+        "skill_name": "business-intelligence",
+        "family_key": "borghei/claude-skills:business-intelligence",
+        "skills_sh_installs": 1400,
+        "skills_sh_installs_display": "1.4K",
+        "skills_sh_url": "https://skills.sh/borghei/claude-skills/business-intelligence"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "adobe/skills:scrape-webpage",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "adobe/skills",
+        "skill_name": "scrape-webpage",
+        "family_key": "adobe/skills:scrape-webpage",
+        "skills_sh_installs": 1300,
+        "skills_sh_installs_display": "1.3K",
+        "skills_sh_url": "https://skills.sh/adobe/skills/scrape-webpage"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ailabs-393/ai-labs-claude-skills:csv-data-visualizer",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "ailabs-393/ai-labs-claude-skills",
+        "skill_name": "csv-data-visualizer",
+        "family_key": "ailabs-393/ai-labs-claude-skills:csv-data-visualizer",
+        "skills_sh_installs": 1200,
+        "skills_sh_installs_display": "1.2K",
+        "skills_sh_url": "https://skills.sh/ailabs-393/ai-labs-claude-skills/csv-data-visualizer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "adobe/skills:identify-page-structure",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "adobe/skills",
+        "skill_name": "identify-page-structure",
+        "family_key": "adobe/skills:identify-page-structure",
+        "skills_sh_installs": 1100,
+        "skills_sh_installs_display": "1.1K",
+        "skills_sh_url": "https://skills.sh/adobe/skills/identify-page-structure"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "adobe/skills:page-import",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "adobe/skills",
+        "skill_name": "page-import",
+        "family_key": "adobe/skills:page-import",
+        "skills_sh_installs": 1100,
+        "skills_sh_installs_display": "1.1K",
+        "skills_sh_url": "https://skills.sh/adobe/skills/page-import"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ailabs-393/ai-labs-claude-skills:data-analyst",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "ailabs-393/ai-labs-claude-skills",
+        "skill_name": "data-analyst",
+        "family_key": "ailabs-393/ai-labs-claude-skills:data-analyst",
+        "skills_sh_installs": 1100,
+        "skills_sh_installs_display": "1.1K",
+        "skills_sh_url": "https://skills.sh/ailabs-393/ai-labs-claude-skills/data-analyst"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "product-on-purpose/pm-skills:measure-dashboard-requirements",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "product-on-purpose/pm-skills",
+        "skill_name": "measure-dashboard-requirements",
+        "family_key": "product-on-purpose/pm-skills:measure-dashboard-requirements",
+        "skills_sh_installs": 511,
+        "skills_sh_installs_display": "511",
+        "skills_sh_url": "https://skills.sh/product-on-purpose/pm-skills/measure-dashboard-requirements"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "2ykwang/agent-skills:html-visual",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "2ykwang/agent-skills",
+        "skill_name": "html-visual",
+        "family_key": "2ykwang/agent-skills:html-visual",
+        "skills_sh_installs": 373,
+        "skills_sh_installs_display": "373",
+        "skills_sh_url": "https://skills.sh/2ykwang/agent-skills/html-visual"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "onewave-ai/claude-skills:executive-dashboard-generator",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "onewave-ai/claude-skills",
+        "skill_name": "executive-dashboard-generator",
+        "family_key": "onewave-ai/claude-skills:executive-dashboard-generator",
+        "skills_sh_installs": 324,
+        "skills_sh_installs_display": "324",
+        "skills_sh_url": "https://skills.sh/onewave-ai/claude-skills/executive-dashboard-generator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jdrhyne/agent-skills:elegant-reports",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "jdrhyne/agent-skills",
+        "skill_name": "elegant-reports",
+        "family_key": "jdrhyne/agent-skills:elegant-reports",
+        "skills_sh_installs": 219,
+        "skills_sh_installs_display": "219",
+        "skills_sh_url": "https://skills.sh/jdrhyne/agent-skills/elegant-reports"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "guia-matthieu/clawfu-skills:data-visualizer",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "guia-matthieu/clawfu-skills",
+        "skill_name": "data-visualizer",
+        "family_key": "guia-matthieu/clawfu-skills:data-visualizer",
+        "skills_sh_installs": 190,
+        "skills_sh_installs_display": "190",
+        "skills_sh_url": "https://skills.sh/guia-matthieu/clawfu-skills/data-visualizer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "opensensenova/sensenova-skills:sn-md-to-html-report",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "opensensenova/sensenova-skills",
+        "skill_name": "sn-md-to-html-report",
+        "family_key": "opensensenova/sensenova-skills:sn-md-to-html-report",
+        "skills_sh_installs": 110,
+        "skills_sh_installs_display": "110",
+        "skills_sh_url": "https://skills.sh/opensensenova/sensenova-skills/sn-md-to-html-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "youmind-openlab/skills:youmind-webpage-generator",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "youmind-openlab/skills",
+        "skill_name": "youmind-webpage-generator",
+        "family_key": "youmind-openlab/skills:youmind-webpage-generator",
+        "skills_sh_installs": 74,
+        "skills_sh_installs_display": "74",
+        "skills_sh_url": "https://skills.sh/youmind-openlab/skills/youmind-webpage-generator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "membranedev/application-skills:html-to-image",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "membranedev/application-skills",
+        "skill_name": "html-to-image",
+        "family_key": "membranedev/application-skills:html-to-image",
+        "skills_sh_installs": 70,
+        "skills_sh_installs_display": "70",
+        "skills_sh_url": "https://skills.sh/membranedev/application-skills/html-to-image"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "within-7/minto-plugin-tools:html-presentation-beautifier",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "within-7/minto-plugin-tools",
+        "skill_name": "html-presentation-beautifier",
+        "family_key": "within-7/minto-plugin-tools:html-presentation-beautifier",
+        "skills_sh_installs": 40,
+        "skills_sh_installs_display": "40",
+        "skills_sh_url": "https://skills.sh/within-7/minto-plugin-tools/html-presentation-beautifier"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "careerhackeralex/visualize:evaluate",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "careerhackeralex/visualize",
+        "skill_name": "evaluate",
+        "family_key": "careerhackeralex/visualize:evaluate",
+        "skills_sh_installs": 39,
+        "skills_sh_installs_display": "39",
+        "skills_sh_url": "https://skills.sh/careerhackeralex/visualize/evaluate"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "loxosceles/ai-dev:publish-html-report",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "loxosceles/ai-dev",
+        "skill_name": "publish-html-report",
+        "family_key": "loxosceles/ai-dev:publish-html-report",
+        "skills_sh_installs": 37,
+        "skills_sh_installs_display": "37",
+        "skills_sh_url": "https://skills.sh/loxosceles/ai-dev/publish-html-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "okwinds/miscellany:headless-web-viewer",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "okwinds/miscellany",
+        "skill_name": "headless-web-viewer",
+        "family_key": "okwinds/miscellany:headless-web-viewer",
+        "skills_sh_installs": 36,
+        "skills_sh_installs_display": "36",
+        "skills_sh_url": "https://skills.sh/okwinds/miscellany/headless-web-viewer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gooseworks-ai/goose-skills:browser-automation-notte",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "gooseworks-ai/goose-skills",
+        "skill_name": "browser-automation-notte",
+        "family_key": "gooseworks-ai/goose-skills:browser-automation-notte",
+        "skills_sh_installs": 29,
+        "skills_sh_installs_display": "29",
+        "skills_sh_url": "https://skills.sh/gooseworks-ai/goose-skills/browser-automation-notte"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "gooseworks-ai/goose-skills:extract-webpage-data",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "gooseworks-ai/goose-skills",
+        "skill_name": "extract-webpage-data",
+        "family_key": "gooseworks-ai/goose-skills:extract-webpage-data",
+        "skills_sh_installs": 28,
+        "skills_sh_installs_display": "28",
+        "skills_sh_url": "https://skills.sh/gooseworks-ai/goose-skills/extract-webpage-data"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vamseeachanta/workspace-hub:engineering-report-generator",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "vamseeachanta/workspace-hub",
+        "skill_name": "engineering-report-generator",
+        "family_key": "vamseeachanta/workspace-hub:engineering-report-generator",
+        "skills_sh_installs": 27,
+        "skills_sh_installs_display": "27",
+        "skills_sh_url": "https://skills.sh/vamseeachanta/workspace-hub/engineering-report-generator"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "crayon-ai/book-to-webpage:book-to-webpage",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "crayon-ai/book-to-webpage",
+        "skill_name": "book-to-webpage",
+        "family_key": "crayon-ai/book-to-webpage:book-to-webpage",
+        "skills_sh_installs": 23,
+        "skills_sh_installs_display": "23",
+        "skills_sh_url": "https://skills.sh/crayon-ai/book-to-webpage/book-to-webpage"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "korecm/cookiebite:cookiebite",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "korecm/cookiebite",
+        "skill_name": "cookiebite",
+        "family_key": "korecm/cookiebite:cookiebite",
+        "skills_sh_installs": 20,
+        "skills_sh_installs_display": "20",
+        "skills_sh_url": "https://skills.sh/korecm/cookiebite/cookiebite"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openai/role-specific-plugins:build-report",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "openai/role-specific-plugins",
+        "skill_name": "build-report",
+        "family_key": "openai/role-specific-plugins:build-report",
+        "skills_sh_installs": 20,
+        "skills_sh_installs_display": "20",
+        "skills_sh_url": "https://skills.sh/openai/role-specific-plugins/build-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "murphytrueman/design-system-ops:visual-report",
+      "queries": [
+        "data visualization dashboard report",
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "murphytrueman/design-system-ops",
+        "skill_name": "visual-report",
+        "family_key": "murphytrueman/design-system-ops:visual-report",
+        "skills_sh_installs": 17,
+        "skills_sh_installs_display": "17",
+        "skills_sh_url": "https://skills.sh/murphytrueman/design-system-ops/visual-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sleeplessv/relentless-data-skills:visual-report",
+      "queries": [
+        "data visualization dashboard report",
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "sleeplessv/relentless-data-skills",
+        "skill_name": "visual-report",
+        "family_key": "sleeplessv/relentless-data-skills:visual-report",
+        "skills_sh_installs": 15,
+        "skills_sh_installs_display": "15",
+        "skills_sh_url": "https://skills.sh/sleeplessv/relentless-data-skills/visual-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sevzq/screenshot-to-html:screenshot-to-html",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "sevzq/screenshot-to-html",
+        "skill_name": "screenshot-to-html",
+        "family_key": "sevzq/screenshot-to-html:screenshot-to-html",
+        "skills_sh_installs": 13,
+        "skills_sh_installs_display": "13",
+        "skills_sh_url": "https://skills.sh/sevzq/screenshot-to-html/screenshot-to-html"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "dodatech/approved-skills:business-intelligence",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "dodatech/approved-skills",
+        "skill_name": "business-intelligence",
+        "family_key": "dodatech/approved-skills:business-intelligence",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/dodatech/approved-skills/business-intelligence"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mz1999/mazhen-skills:visual-html",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "mz1999/mazhen-skills",
+        "skill_name": "visual-html",
+        "family_key": "mz1999/mazhen-skills:visual-html",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/mz1999/mazhen-skills/visual-html"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "avantmedialtd/skills:e2e-testing",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "avantmedialtd/skills",
+        "skill_name": "e2e-testing",
+        "family_key": "avantmedialtd/skills:e2e-testing",
+        "skills_sh_installs": 11,
+        "skills_sh_installs_display": "11",
+        "skills_sh_url": "https://skills.sh/avantmedialtd/skills/e2e-testing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "hylarucoder/hai-stack:hai-visual-report",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "hylarucoder/hai-stack",
+        "skill_name": "hai-visual-report",
+        "family_key": "hylarucoder/hai-stack:hai-visual-report",
+        "skills_sh_installs": 11,
+        "skills_sh_installs_display": "11",
+        "skills_sh_url": "https://skills.sh/hylarucoder/hai-stack/hai-visual-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "inference-sh/agent-skills:data-visualization",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "inference-sh/agent-skills",
+        "skill_name": "data-visualization",
+        "family_key": "inference-sh/agent-skills:data-visualization",
+        "skills_sh_installs": 10,
+        "skills_sh_installs_display": "10",
+        "skills_sh_url": "https://skills.sh/inference-sh/agent-skills/data-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "danielvm-git/bigpowers:visual-dashboard",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "danielvm-git/bigpowers",
+        "skill_name": "visual-dashboard",
+        "family_key": "danielvm-git/bigpowers:visual-dashboard",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/danielvm-git/bigpowers/visual-dashboard"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "larsartmann/skills:html-report-kit",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "larsartmann/skills",
+        "skill_name": "html-report-kit",
+        "family_key": "larsartmann/skills:html-report-kit",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/larsartmann/skills/html-report-kit"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "dev-dennis-040/openclaw-agency-skills:data-analytics-reporter",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "dev-dennis-040/openclaw-agency-skills",
+        "skill_name": "data-analytics-reporter",
+        "family_key": "dev-dennis-040/openclaw-agency-skills:data-analytics-reporter",
+        "skills_sh_installs": 7,
+        "skills_sh_installs_display": "7",
+        "skills_sh_url": "https://skills.sh/dev-dennis-040/openclaw-agency-skills/data-analytics-reporter"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "kenbanks-peng/skills:html-reports",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "kenbanks-peng/skills",
+        "skill_name": "html-reports",
+        "family_key": "kenbanks-peng/skills:html-reports",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/kenbanks-peng/skills/html-reports"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "easyzoom/aix-skills:webpage-to-markdown",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "easyzoom/aix-skills",
+        "skill_name": "webpage-to-markdown",
+        "family_key": "easyzoom/aix-skills:webpage-to-markdown",
+        "skills_sh_installs": 4,
+        "skills_sh_installs_display": "4",
+        "skills_sh_url": "https://skills.sh/easyzoom/aix-skills/webpage-to-markdown"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mfang0126/openclaw-skills:html-screenshot",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "webpage screenshot html",
+        "owner_repo": "mfang0126/openclaw-skills",
+        "skill_name": "html-screenshot",
+        "family_key": "mfang0126/openclaw-skills:html-screenshot",
+        "skills_sh_installs": 4,
+        "skills_sh_installs_display": "4",
+        "skills_sh_url": "https://skills.sh/mfang0126/openclaw-skills/html-screenshot"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "erphq/skills:reports-dashboards",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "erphq/skills",
+        "skill_name": "reports-dashboards",
+        "family_key": "erphq/skills:reports-dashboards",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/erphq/skills/reports-dashboards"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "indi256s/dataviz-skill:dataviz",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "indi256s/dataviz-skill",
+        "skill_name": "dataviz",
+        "family_key": "indi256s/dataviz-skill:dataviz",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/indi256s/dataviz-skill/dataviz"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jpoindexter/design-and-ai-skills:data-visualization",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "jpoindexter/design-and-ai-skills",
+        "skill_name": "data-visualization",
+        "family_key": "jpoindexter/design-and-ai-skills:data-visualization",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/jpoindexter/design-and-ai-skills/data-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openai/role-based-plugins:build-report",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "html report visualization",
+        "owner_repo": "openai/role-based-plugins",
+        "skill_name": "build-report",
+        "family_key": "openai/role-based-plugins:build-report",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/openai/role-based-plugins/build-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "xobotyi/cc-foundry:dataviz",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "data visualization dashboard report",
+        "owner_repo": "xobotyi/cc-foundry",
+        "skill_name": "dataviz",
+        "family_key": "xobotyi/cc-foundry:dataviz",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/xobotyi/cc-foundry/dataviz"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:canvas",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "canvas",
+        "author": "openclaw",
+        "description": "Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/extensions/canvas/skills/canvas",
+        "skillsmp_url": "https://skillsmp.com/skills/openclaw-openclaw-extensions-canvas-skills-canvas-skill-md",
+        "repo_stars": 385119,
+        "catalog_updated_at": "2026-06-22T05:54:08+00:00",
+        "source_key": "openclaw/openclaw:extensions/canvas/skills/canvas",
+        "family_key": "openclaw/openclaw:canvas",
+        "aliases": [],
+        "query": "html report visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:claw-score",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "claw-score",
+        "author": "openclaw",
+        "description": "Audit or refresh OpenClaw maturity scorecard docs from root taxonomy, maturity scores, and QA evidence artifacts without using maintainer discrawl data or committed inventory reports.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/claw-score",
+        "skillsmp_url": "https://skillsmp.com/skills/openclaw-openclaw-agents-skills-claw-score-skill-md",
+        "repo_stars": 385119,
+        "catalog_updated_at": "2026-06-23T09:19:45+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/claw-score",
+        "family_key": "openclaw/openclaw:claw-score",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:diagram-maker",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "diagram-maker",
+        "author": "openclaw",
+        "description": "Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/diagram-maker",
+        "skillsmp_url": "https://skillsmp.com/skills/openclaw-openclaw-skills-diagram-maker-skill-md",
+        "repo_stars": 385119,
+        "catalog_updated_at": "2026-05-17T10:04:04+00:00",
+        "source_key": "openclaw/openclaw:skills/diagram-maker",
+        "family_key": "openclaw/openclaw:diagram-maker",
+        "aliases": [],
+        "query": "html report visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:notion",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "notion",
+        "author": "openclaw",
+        "description": "Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/notion",
+        "skillsmp_url": "https://skillsmp.com/skills/openclaw-openclaw-skills-notion-skill-md",
+        "repo_stars": 385119,
+        "catalog_updated_at": "2026-05-17T10:50:27+00:00",
+        "source_key": "openclaw/openclaw:skills/notion",
+        "family_key": "openclaw/openclaw:notion",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:data-scraper-agent",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "data-scraper-agent",
+        "author": "affaan-m",
+        "description": "Build a fully automated AI-powered data collection agent for any public source — job boards, prices, news, GitHub, sports, anything. Runs on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/data-scraper-agent",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-data-scraper-agent-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-07-09T07:02:40+00:00",
+        "source_key": "affaan-m/ecc:skills/data-scraper-agent",
+        "family_key": "affaan-m/ecc:data-scraper-agent",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/data-scraper-agent"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/data-scraper-agent"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/data-scraper-agent"
+          }
+        ],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:data-throughput-accelerator",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "data-throughput-accelerator",
+        "author": "affaan-m",
+        "description": "Use when large data ingestion, backfill, export, ETL, warehouse loading, manifest catch-up, or table synchronization needs to become much faster while preserving data correctness.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/data-throughput-accelerator",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-data-throughput-accelerator-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-07-17T21:13:49+00:00",
+        "source_key": "affaan-m/ecc:skills/data-throughput-accelerator",
+        "family_key": "affaan-m/ecc:data-throughput-accelerator",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:frontend-a11y",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "frontend-a11y",
+        "author": "affaan-m",
+        "description": "Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus management, and screen reader support. Use when building any interactive UI component or form.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/frontend-a11y",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-frontend-a11y-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/frontend-a11y",
+        "family_key": "affaan-m/ecc:frontend-a11y",
+        "aliases": [],
+        "query": "html report visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:frontend-slides",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "frontend-slides",
+        "author": "affaan-m",
+        "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/frontend-slides",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-frontend-slides-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/frontend-slides",
+        "family_key": "affaan-m/ecc:frontend-slides",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.cursor/skills/frontend-slides"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.cursor/skills/frontend-slides"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/frontend-slides"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/frontend-slides"
+          }
+        ],
+        "query": "html report visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:ito-data-atlas-agent",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "ito-data-atlas-agent",
+        "author": "affaan-m",
+        "description": "Design background Data Atlas style agents for Itô basket research, market discovery, parameter drafting, and human-in-the-loop editing. Use for architecture and workflow planning, not live order execution.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/ito-data-atlas-agent",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-ito-data-atlas-agent-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/ito-data-atlas-agent",
+        "family_key": "affaan-m/ecc:ito-data-atlas-agent",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:plan-canvas",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "plan-canvas",
+        "author": "affaan-m",
+        "description": "Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests changes without leaving the page. Use when presenting a plan for review, or when feedback like \"move this, change that\" is easier pointed at than typed.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/plan-canvas",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-plan-canvas-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-07-08T21:12:48+00:00",
+        "source_key": "affaan-m/ecc:skills/plan-canvas",
+        "family_key": "affaan-m/ecc:plan-canvas",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/plan-canvas"
+          }
+        ],
+        "query": "html report visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:prediction-market-oracle-research",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "prediction-market-oracle-research",
+        "author": "affaan-m",
+        "description": "Research prediction markets as data sources or oracle signals for products, agents, dashboards, and corporate decision intelligence. Use for source-grounded analysis of market-implied probabilities, caveats, and integration patterns without investment advice.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/prediction-market-oracle-research",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-prediction-market-oracle-research-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/prediction-market-oracle-research",
+        "family_key": "affaan-m/ecc:prediction-market-oracle-research",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:redis-patterns",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "redis-patterns",
+        "author": "affaan-m",
+        "description": "Redis data structure patterns, caching strategies, distributed locks, rate limiting, pub/sub, and connection management for production applications.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/redis-patterns",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-redis-patterns-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/redis-patterns",
+        "family_key": "affaan-m/ecc:redis-patterns",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:repo-scan",
+      "queries": [
+        "html report visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "repo-scan",
+        "author": "affaan-m",
+        "description": "Cross-stack source code asset audit — classifies every file, detects embedded third-party libraries, and delivers actionable four-level verdicts per module with interactive HTML reports.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/repo-scan",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-skills-repo-scan-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/repo-scan",
+        "family_key": "affaan-m/ecc:repo-scan",
+        "aliases": [],
+        "query": "html report visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:swift-actor-persistence",
+      "queries": [
+        "data visualization dashboard report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "swift-actor-persistence",
+        "author": "affaan-m",
+        "description": "Thread-safe data persistence in Swift using actors — in-memory cache with file-backed storage, eliminating data races by design.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/.kiro/skills/swift-actor-persistence",
+        "skillsmp_url": "https://skillsmp.com/skills/affaan-m-ecc-kiro-skills-swift-actor-persistence-skill-md",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-07T05:26:37+00:00",
+        "source_key": "affaan-m/ecc:.kiro/skills/swift-actor-persistence",
+        "family_key": "affaan-m/ecc:swift-actor-persistence",
+        "aliases": [],
+        "query": "data visualization dashboard report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "garrytan/gstack:scrape",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scrape",
+        "author": "garrytan",
+        "description": "Pull data from a web page. (gstack)",
+        "content_language": "en",
+        "github_url": "https://github.com/garrytan/gstack/tree/main/scrape",
+        "skillsmp_url": "https://skillsmp.com/skills/garrytan-gstack-scrape-skill-md",
+        "repo_stars": 126191,
+        "catalog_updated_at": "2026-06-25T16:42:45+00:00",
+        "source_key": "garrytan/gstack:scrape",
+        "family_key": "garrytan/gstack:scrape",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "paperclipai/paperclip:agent-browser",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "agent-browser",
+        "author": "paperclipai",
+        "description": "Drive a real browser to inspect or interact with a web page or app — navigate, take screenshots, read console and network, fill simple forms — for verification tasks, not unattended automation.",
+        "content_language": "en",
+        "github_url": "https://github.com/paperclipai/paperclip/tree/master/packages/skills-catalog/catalog/optional/browser/agent-browser",
+        "skillsmp_url": "https://skillsmp.com/skills/paperclipai-paperclip-packages-skills-catalog-catalog-optional-browser-agent-browser-skill-md",
+        "repo_stars": 75602,
+        "catalog_updated_at": "2026-05-28T17:33:51+00:00",
+        "source_key": "paperclipai/paperclip:packages/skills-catalog/catalog/optional/browser/agent-browser",
+        "family_key": "paperclipai/paperclip:agent-browser",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "thedaviddias/front-end-checklist:og-tags",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "og-tags",
+        "author": "thedaviddias",
+        "description": "Use when auditing a web page's social sharing metadata. Applies to any page users might share on social networks or messaging apps.",
+        "content_language": "en",
+        "github_url": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/og-tags",
+        "skillsmp_url": "https://skillsmp.com/skills/thedaviddias-front-end-checklist-skills-og-tags-skill-md",
+        "repo_stars": 73416,
+        "catalog_updated_at": "2026-05-29T21:54:06+00:00",
+        "source_key": "thedaviddias/front-end-checklist:skills/og-tags",
+        "family_key": "thedaviddias/front-end-checklist:og-tags",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "code-yeongyu/oh-my-openagent:visual-qa",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "visual-qa",
+        "author": "code-yeongyu",
+        "description": "MUST USE after building/changing any UI or when asked whether a page, component, or TUI looks right. Rigorous visual QA across web/page and terminal UIs. Prefer browser:control-in-app-browser for unauthenticated browser/page QA in Codex, then Playwright/agent-browser/dev-browser. Captures screenshot/TUI evidence with bundled diff scripts, runs design-system/functional and visual-fidelity/CJK reviewer passes, then synthesizes a good/bad verdict. Triggers: visual QA, screenshot/pixel diff, UI looks wrong, reference fidelity, design system check, responsive check, CJK text clipping, TUI alignment, box-drawing drift.",
+        "content_language": "en",
+        "github_url": "https://github.com/code-yeongyu/oh-my-openagent/tree/dev/packages/shared-skills/skills/visual-qa",
+        "skillsmp_url": "https://skillsmp.com/skills/code-yeongyu-oh-my-openagent-packages-shared-skills-skills-visual-qa-skill-md",
+        "repo_stars": 67193,
+        "catalog_updated_at": "2026-07-12T14:16:06+00:00",
+        "source_key": "code-yeongyu/oh-my-openagent:packages/shared-skills/skills/visual-qa",
+        "family_key": "code-yeongyu/oh-my-openagent:visual-qa",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "tldraw/tldraw:convert-web-app",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "convert-web-app",
+        "author": "tldraw",
+        "description": "This skill should be used when the user asks to \"add MCP App support to my web app\", \"turn my web app into a hybrid MCP App\", \"make my web page work as an MCP App too\", \"wrap my existing UI as an MCP App\", \"convert iframe embed to MCP App\", \"turn my SPA into an MCP App\", or needs to add MCP App support to an existing web application while keeping it working standalone. Provides guidance for analyzing existing web apps and creating a hybrid web + MCP App with server-side tool and resource registration.",
+        "content_language": "en",
+        "github_url": "https://github.com/tldraw/tldraw/tree/main/apps/mcp-app/.claude/skills/convert-web-app",
+        "skillsmp_url": "https://skillsmp.com/skills/tldraw-tldraw-apps-mcp-app-claude-skills-convert-web-app-skill-md",
+        "repo_stars": 49577,
+        "catalog_updated_at": "2026-03-03T04:42:03+00:00",
+        "source_key": "tldraw/tldraw:apps/mcp-app/.claude/skills/convert-web-app",
+        "family_key": "tldraw/tldraw:convert-web-app",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "kepano/obsidian-skills:defuddle",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "defuddle",
+        "author": "kepano",
+        "description": "Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md — those are already markdown, use WebFetch directly.",
+        "content_language": "en",
+        "github_url": "https://github.com/kepano/obsidian-skills/tree/main/skills/defuddle",
+        "skillsmp_url": "https://skillsmp.com/skills/kepano-obsidian-skills-skills-defuddle-skill-md",
+        "repo_stars": 44049,
+        "catalog_updated_at": "2026-03-29T13:27:42+00:00",
+        "source_key": "kepano/obsidian-skills:skills/defuddle",
+        "family_key": "kepano/obsidian-skills:defuddle",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "heygen-com/hyperframes:motion-graphics",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "motion-graphics",
+        "author": "heygen-com",
+        "description": "A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight regions, connect places, zoom to a location), animated tweet / news-article / headline, webpage / UI animation (scroll, cursor, callouts), or fusing a real image's geometry into a chart. Usually under 10s (up to ~30s), no narration or live-action subject; renders to MP4 or transparent overlay. Longer / narrated / multi-scene → /general-video. Unclear → /hyperframes.",
+        "content_language": "en",
+        "github_url": "https://github.com/heygen-com/hyperframes/tree/main/skills/motion-graphics",
+        "skillsmp_url": "https://skillsmp.com/skills/heygen-com-hyperframes-skills-motion-graphics-skill-md",
+        "repo_stars": 39410,
+        "catalog_updated_at": "2026-07-31T20:30:07+00:00",
+        "source_key": "heygen-com/hyperframes:skills/motion-graphics",
+        "family_key": "heygen-com/hyperframes:motion-graphics",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "github/awesome-copilot:latchshot-page-capture",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "latchshot-page-capture",
+        "author": "github",
+        "description": "Use this skill when a user needs a screenshot, website thumbnail, full-page capture, or PDF of a public HTTP(S) webpage saved as a local artifact through Latchshot, including report, QA, archive, and social-preview workflows. Do not use it for private or authenticated pages, raw HTML, scraping or extraction, arbitrary browser actions, CAPTCHA or anti-bot bypass, or local-file capture.",
+        "content_language": "en",
+        "github_url": "https://github.com/github/awesome-copilot/tree/main/skills/latchshot-page-capture",
+        "skillsmp_url": "https://skillsmp.com/skills/github-awesome-copilot-skills-latchshot-page-capture-skill-md",
+        "repo_stars": 37423,
+        "catalog_updated_at": "2026-07-21T08:16:46+00:00",
+        "source_key": "github/awesome-copilot:skills/latchshot-page-capture",
+        "family_key": "github/awesome-copilot:latchshot-page-capture",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "davila7/claude-code-templates:scrape",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scrape",
+        "author": "davila7",
+        "description": "Scrape any webpage as clean markdown via Bright Data Web Unlocker API. Bypasses bot detection and CAPTCHA. Requires BRIGHTDATA_API_KEY and BRIGHTDATA_UNLOCKER_ZONE environment variables.",
+        "content_language": "en",
+        "github_url": "https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/web-data/scrape",
+        "skillsmp_url": "https://skillsmp.com/skills/davila7-claude-code-templates-cli-tool-components-skills-web-data-scrape-skill-md",
+        "repo_stars": 30096,
+        "catalog_updated_at": "2026-03-13T23:18:13+00:00",
+        "source_key": "davila7/claude-code-templates:cli-tool/components/skills/web-data/scrape",
+        "family_key": "davila7/claude-code-templates:scrape",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "davila7/claude-code-templates:web-to-markdown",
+      "queries": [
+        "webpage screenshot html"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "web-to-markdown",
+        "author": "davila7",
+        "description": "Use ONLY when the user explicitly says: 'use the skill web-to-markdown ...' (or 'use a skill web-to-markdown ...'). Converts webpage URLs to clean Markdown by calling the local web2md CLI (Puppeteer + Readability), suitable for JS-rendered pages.",
+        "content_language": "en",
+        "github_url": "https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/development/web-to-markdown",
+        "skillsmp_url": "https://skillsmp.com/skills/davila7-claude-code-templates-cli-tool-components-skills-development-web-to-markdown-skill-md",
+        "repo_stars": 30096,
+        "catalog_updated_at": "2026-01-25T00:56:42+00:00",
+        "source_key": "davila7/claude-code-templates:cli-tool/components/skills/development/web-to-markdown",
+        "family_key": "davila7/claude-code-templates:web-to-markdown",
+        "aliases": [],
+        "query": "webpage screenshot html"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

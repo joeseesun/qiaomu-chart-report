@@ -1,0 +1,51 @@
+{
+  "recommended_threshold": 0.34,
+  "description_required_concepts": ["html_report", "visualization", "screenshot"],
+  "positive_concepts": {
+    "html_report": ["html report", "HTML 报告", "统计报告", "网页化报告", "网页报告", "数据故事", "单页网页", "自包含网页"],
+    "visualization": ["visualization", "visualize", "可视化", "图表", "dashboard", "data story"],
+    "source_data": ["csv", "json", "markdown", "spreadsheet", "table", "data", "文本", "表格", "数据", "研究材料"],
+    "screenshot": ["screenshot", "png", "截图", "桌面截图", "手机截图"],
+    "clarity": ["clear", "readable", "清晰", "清楚表达", "结论先行", "易读"],
+    "advanced_chart": ["sankey", "sunburst", "beeswarm", "ridgeline", "chord", "bump chart", "桑基图", "旭日图", "蜂群图", "山脊图", "弦图", "排名变化图", "有趣图表", "高级图表"],
+    "existing_page": ["existing page", "existing website", "当前网页", "已有网页", "现有网站"]
+  },
+  "negative_patterns": [
+    "只分析数据",
+    "不要网页",
+    "完整 web app",
+    "营销落地页",
+    "只截现有网页",
+    "封面图",
+    "幻灯片",
+    "do not create html",
+    "website screenshot only"
+  ],
+  "should_trigger": [
+    {"text": "把这份 CSV 做成带图表的 HTML 统计报告和桌面、手机截图", "family": "csv_report_cn"},
+    {"text": "把这篇 Markdown 分析网页化，清晰表达结论并输出 PNG", "family": "markdown_editorial_cn"},
+    {"text": "生成一个自包含 HTML 数据故事，展示年度趋势和关键异常", "family": "data_story_cn"},
+    {"text": "把这些研究材料整理成可分享的网页报告和截图", "family": "research_report_cn"},
+    {"text": "Create a responsive HTML report with charts from this JSON and render desktop and mobile screenshots.", "family": "json_report_en"},
+    {"text": "Turn this table into a clear, evidence-led data story in a single HTML file.", "family": "table_story_en"},
+    {"text": "做一份结论先行、图表可读的季度统计网页报告", "family": "quarterly_report_cn"},
+    {"text": "将调查结果做成单页网页可视化，并提供全页截图", "family": "survey_report_cn"},
+    {"text": "把用户来源到转化的数据做成桑基图 HTML 报告和移动截图", "family": "sankey_report_cn"},
+    {"text": "用蜂群图和山脊图比较这些分布，输出自包含网页", "family": "distribution_advanced_cn"},
+    {"text": "Create an HTML data story with a bump chart and chord diagram, plus responsive screenshots.", "family": "advanced_charts_en"}
+  ],
+  "should_not_trigger": [
+    {"text": "只分析这个 CSV，告诉我均值，不要网页", "family": "analysis_only"},
+    {"text": "帮我开发一个带登录和数据库的完整 web app", "family": "app_development"},
+    {"text": "为产品做一个营销落地页", "family": "landing_page"},
+    {"text": "把现有网站截个图，website screenshot only", "family": "existing_screenshot"},
+    {"text": "做一张 16:9 的 HTML 封面图", "family": "cover"},
+    {"text": "Create a slide deck for the board meeting.", "family": "slides"}
+  ],
+  "near_neighbor": [
+    {"text": "把这段内容做成小红书信息卡", "family": "info_card"},
+    {"text": "审查当前网页的响应式问题，不要生成新报告", "family": "web_review"},
+    {"text": "给我一个统计分析方法，不需要产物", "family": "method_only"},
+    {"text": "把这个 HTML 转成 PDF", "family": "pdf_conversion"}
+  ]
+}

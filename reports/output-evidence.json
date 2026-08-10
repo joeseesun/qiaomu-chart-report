@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "evidence_type": "recorded_fixture",
+  "generated_at": "2026-08-07",
+  "case": "quarterly-operations-report",
+  "artifacts": {
+    "html": "evals/fixtures/quarterly-report.html",
+    "audit": "reports/fixture-audit.json",
+    "desktop_png": "reports/fixture-desktop.png",
+    "mobile_png": "reports/fixture-mobile.png",
+    "chart_gallery_html": "reports/chart-gallery.html",
+    "chart_gallery_audit": "reports/chart-gallery-audit.json",
+    "chart_gallery_desktop": "reports/chart-gallery-desktop.png",
+    "chart_gallery_mobile": "reports/chart-gallery-mobile.png",
+    "vendor_integrity": "reports/vendor-integrity.json"
+  },
+  "automated_results": {
+    "static_audit": "pass; 0 errors, 0 warnings",
+    "desktop_capture": "pass; 1440x2303 PNG, not clipped",
+    "mobile_capture": "pass; 390x2926 PNG, not clipped",
+    "remote_dependencies": 0,
+    "chart_gallery_semantics": "13/13 containers have role/ARIA and figure captions",
+    "chart_gallery_runtime": "13/13 ready on desktop and mobile; 0 captured runtime errors",
+    "vendor_integrity": "ECharts 6.1.0 and D3 7.9.0 SHA-256 and license evidence pass"
+    ,"default_style": "vercel-monochrome page shell passes on report and gallery fixtures; required tokens present; legacy default colors absent",
+    "cjk_display_leading": "pass; language-aware token is 1.12 in both Chinese fixtures, selector use confirmed, 1.08 audit floor enforced",
+    "chart_color_separation": "pass; gallery exposes eight non-neutral data-color tokens while preserving the monochrome page shell",
+    "solid_chart_fill": "pass; global ECharts aria decal is disabled and the regenerated gallery shows clean fills without automatic hatching"
+  },
+  "claims_allowed": [
+    "the recorded fixture passes the bundled static audit",
+    "the local Node 26 + Chrome runtime renders desktop and mobile PNGs",
+    "the recorded gallery renders 13 pinned open-source chart recipes without captured runtime errors"
+    ,"the regenerated report and gallery fixtures use the audited Vercel/Geist-inspired monochrome default",
+    "the Chinese fixture titles use audited 1.12 display leading and were visually opened at desktop and mobile widths",
+    "the regenerated gallery uses a coherent multi-color data layer without turning the webpage shell into a colorful theme",
+    "default ECharts fills render without globally applied hatch or dot textures"
+  ],
+  "claims_not_allowed": [
+    "provider-backed quality improvement",
+    "independent human preference",
+    "real-dataset statistical correctness",
+    "cross-browser or cross-platform compatibility"
+  ]
+}

@@ -1,0 +1,1535 @@
+{
+  "ok": true,
+  "complete": false,
+  "researched_at": "2026-08-07",
+  "queries": [
+    "advanced data visualization charts",
+    "interactive chart gallery html report",
+    "echarts d3 visualization"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "advanced data visualization charts",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 18,
+      "skillsmp_candidates": 9
+    },
+    {
+      "query": "interactive chart gallery html report",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 19,
+      "skillsmp_candidates": 8
+    },
+    {
+      "query": "echarts d3 visualization",
+      "skills_sh": "error",
+      "skillsmp": "ok",
+      "skills_sh_error": "skills.sh returned no parseable candidates",
+      "skillsmp_candidates": 10
+    }
+  ],
+  "candidate_family_count": 63,
+  "candidates": [
+    {
+      "family_key": "antvis/chart-visualization-skills:chart-visualization",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "antvis/chart-visualization-skills",
+        "skill_name": "chart-visualization",
+        "family_key": "antvis/chart-visualization-skills:chart-visualization",
+        "skills_sh_installs": 5500,
+        "skills_sh_installs_display": "5.5K",
+        "skills_sh_url": "https://skills.sh/antvis/chart-visualization-skills/chart-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "starchild-ai-agent/official-skills:chart",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "starchild-ai-agent/official-skills",
+        "skill_name": "chart",
+        "family_key": "starchild-ai-agent/official-skills:chart",
+        "skills_sh_installs": 3800,
+        "skills_sh_installs_display": "3.8K",
+        "skills_sh_url": "https://skills.sh/starchild-ai-agent/official-skills/chart"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bytedance/deer-flow:chart-visualization",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "bytedance/deer-flow",
+        "skill_name": "chart-visualization",
+        "family_key": "bytedance/deer-flow:chart-visualization",
+        "skills_sh_installs": 2100,
+        "skills_sh_installs_display": "2.1K",
+        "skills_sh_url": "https://skills.sh/bytedance/deer-flow/chart-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "syncfusion/react-ui-components-skills:syncfusion-react-charts",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "syncfusion/react-ui-components-skills",
+        "skill_name": "syncfusion-react-charts",
+        "family_key": "syncfusion/react-ui-components-skills:syncfusion-react-charts",
+        "skills_sh_installs": 469,
+        "skills_sh_installs_display": "469",
+        "skills_sh_url": "https://skills.sh/syncfusion/react-ui-components-skills/syncfusion-react-charts"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "syncfusion/react-ui-components-skills:syncfusion-react-sparkline",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "syncfusion/react-ui-components-skills",
+        "skill_name": "syncfusion-react-sparkline",
+        "family_key": "syncfusion/react-ui-components-skills:syncfusion-react-sparkline",
+        "skills_sh_installs": 355,
+        "skills_sh_installs_display": "355",
+        "skills_sh_url": "https://skills.sh/syncfusion/react-ui-components-skills/syncfusion-react-sparkline"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "syncfusion/blazor-ui-components-skills:syncfusion-blazor-charts",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "syncfusion/blazor-ui-components-skills",
+        "skill_name": "syncfusion-blazor-charts",
+        "family_key": "syncfusion/blazor-ui-components-skills:syncfusion-blazor-charts",
+        "skills_sh_installs": 262,
+        "skills_sh_installs_display": "262",
+        "skills_sh_url": "https://skills.sh/syncfusion/blazor-ui-components-skills/syncfusion-blazor-charts"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "erichowens/some_claude_skills:data-viz-2025",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "erichowens/some_claude_skills",
+        "skill_name": "data-viz-2025",
+        "family_key": "erichowens/some_claude_skills:data-viz-2025",
+        "skills_sh_installs": 242,
+        "skills_sh_installs_display": "242",
+        "skills_sh_url": "https://skills.sh/erichowens/some_claude_skills/data-viz-2025"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mengto/skills:html-to-interaction-prompts",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "mengto/skills",
+        "skill_name": "html-to-interaction-prompts",
+        "family_key": "mengto/skills:html-to-interaction-prompts",
+        "skills_sh_installs": 216,
+        "skills_sh_installs_display": "216",
+        "skills_sh_url": "https://skills.sh/mengto/skills/html-to-interaction-prompts"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "syncfusion/angular-ui-components-skills:syncfusion-angular-chart",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "syncfusion/angular-ui-components-skills",
+        "skill_name": "syncfusion-angular-chart",
+        "family_key": "syncfusion/angular-ui-components-skills:syncfusion-angular-chart",
+        "skills_sh_installs": 214,
+        "skills_sh_installs_display": "214",
+        "skills_sh_url": "https://skills.sh/syncfusion/angular-ui-components-skills/syncfusion-angular-chart"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "f-labs-io/agent-html-skills:html-interactive-playground",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "f-labs-io/agent-html-skills",
+        "skill_name": "html-interactive-playground",
+        "family_key": "f-labs-io/agent-html-skills:html-interactive-playground",
+        "skills_sh_installs": 137,
+        "skills_sh_installs_display": "137",
+        "skills_sh_url": "https://skills.sh/f-labs-io/agent-html-skills/html-interactive-playground"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "opensensenova/sensenova-skills:sn-md-to-html-report",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "opensensenova/sensenova-skills",
+        "skill_name": "sn-md-to-html-report",
+        "family_key": "opensensenova/sensenova-skills:sn-md-to-html-report",
+        "skills_sh_installs": 110,
+        "skills_sh_installs_display": "110",
+        "skills_sh_url": "https://skills.sh/opensensenova/sensenova-skills/sn-md-to-html-report"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "lyndonkl/claude:d3-visualization",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "lyndonkl/claude",
+        "skill_name": "d3-visualization",
+        "family_key": "lyndonkl/claude:d3-visualization",
+        "skills_sh_installs": 103,
+        "skills_sh_installs_display": "103",
+        "skills_sh_url": "https://skills.sh/lyndonkl/claude/d3-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "elastic/elastic-docs-skills:docs-lens-chart-page",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "elastic/elastic-docs-skills",
+        "skill_name": "docs-lens-chart-page",
+        "family_key": "elastic/elastic-docs-skills:docs-lens-chart-page",
+        "skills_sh_installs": 74,
+        "skills_sh_installs_display": "74",
+        "skills_sh_url": "https://skills.sh/elastic/elastic-docs-skills/docs-lens-chart-page"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:flowai-live-dashboard-template",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "nexu-io/open-design",
+        "skill_name": "flowai-live-dashboard-template",
+        "family_key": "nexu-io/open-design:flowai-live-dashboard-template",
+        "skills_sh_installs": 71,
+        "skills_sh_installs_display": "71",
+        "skills_sh_url": "https://skills.sh/nexu-io/open-design/flowai-live-dashboard-template"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "eyadsibai/ltk:visualization",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "eyadsibai/ltk",
+        "skill_name": "visualization",
+        "family_key": "eyadsibai/ltk:visualization",
+        "skills_sh_installs": 67,
+        "skills_sh_installs_display": "67",
+        "skills_sh_url": "https://skills.sh/eyadsibai/ltk/visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "claude-dev-suite/claude-dev-suite:charting",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "claude-dev-suite/claude-dev-suite",
+        "skill_name": "charting",
+        "family_key": "claude-dev-suite/claude-dev-suite:charting",
+        "skills_sh_installs": 62,
+        "skills_sh_installs_display": "62",
+        "skills_sh_url": "https://skills.sh/claude-dev-suite/claude-dev-suite/charting"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "data-goblin/power-bi-agentic-development:deneb-visuals",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "data-goblin/power-bi-agentic-development",
+        "skill_name": "deneb-visuals",
+        "family_key": "data-goblin/power-bi-agentic-development:deneb-visuals",
+        "skills_sh_installs": 41,
+        "skills_sh_installs_display": "41",
+        "skills_sh_url": "https://skills.sh/data-goblin/power-bi-agentic-development/deneb-visuals"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "onvoyage-ai/gtm-engineer-skills:create-geo-charts",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "onvoyage-ai/gtm-engineer-skills",
+        "skill_name": "create-geo-charts",
+        "family_key": "onvoyage-ai/gtm-engineer-skills:create-geo-charts",
+        "skills_sh_installs": 40,
+        "skills_sh_installs_display": "40",
+        "skills_sh_url": "https://skills.sh/onvoyage-ai/gtm-engineer-skills/create-geo-charts"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "autumnsgrove/claudeskills:d3js-visualization",
+      "queries": [
+        "advanced data visualization charts",
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "autumnsgrove/claudeskills",
+        "skill_name": "d3js-visualization",
+        "family_key": "autumnsgrove/claudeskills:d3js-visualization",
+        "skills_sh_installs": 34,
+        "skills_sh_installs_display": "34",
+        "skills_sh_url": "https://skills.sh/autumnsgrove/claudeskills/d3js-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vamseeachanta/workspace-hub:d3js",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "vamseeachanta/workspace-hub",
+        "skill_name": "d3js",
+        "family_key": "vamseeachanta/workspace-hub:d3js",
+        "skills_sh_installs": 30,
+        "skills_sh_installs_display": "30",
+        "skills_sh_url": "https://skills.sh/vamseeachanta/workspace-hub/d3js"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "full-stack-skills/chart-skills:lime-echart",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "full-stack-skills/chart-skills",
+        "skill_name": "lime-echart",
+        "family_key": "full-stack-skills/chart-skills:lime-echart",
+        "skills_sh_installs": 25,
+        "skills_sh_installs_display": "25",
+        "skills_sh_url": "https://skills.sh/full-stack-skills/chart-skills/lime-echart"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "sammcj/agentic-coding:html-design-examples",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "sammcj/agentic-coding",
+        "skill_name": "html-design-examples",
+        "family_key": "sammcj/agentic-coding:html-design-examples",
+        "skills_sh_installs": 24,
+        "skills_sh_installs_display": "24",
+        "skills_sh_url": "https://skills.sh/sammcj/agentic-coding/html-design-examples"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "korecm/cookiebite:cookiebite",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "korecm/cookiebite",
+        "skill_name": "cookiebite",
+        "family_key": "korecm/cookiebite:cookiebite",
+        "skills_sh_installs": 20,
+        "skills_sh_installs_display": "20",
+        "skills_sh_url": "https://skills.sh/korecm/cookiebite/cookiebite"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wghust/stark-skills:c4-interactive-html",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "wghust/stark-skills",
+        "skill_name": "c4-interactive-html",
+        "family_key": "wghust/stark-skills:c4-interactive-html",
+        "skills_sh_installs": 17,
+        "skills_sh_installs_display": "17",
+        "skills_sh_url": "https://skills.sh/wghust/stark-skills/c4-interactive-html"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "0xkynz/codekit:data-visualization",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "0xkynz/codekit",
+        "skill_name": "data-visualization",
+        "family_key": "0xkynz/codekit:data-visualization",
+        "skills_sh_installs": 16,
+        "skills_sh_installs_display": "16",
+        "skills_sh_url": "https://skills.sh/0xkynz/codekit/data-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "akillness/jeo-skills:html-to-interaction-prompts",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "akillness/jeo-skills",
+        "skill_name": "html-to-interaction-prompts",
+        "family_key": "akillness/jeo-skills:html-to-interaction-prompts",
+        "skills_sh_installs": 16,
+        "skills_sh_installs_display": "16",
+        "skills_sh_url": "https://skills.sh/akillness/jeo-skills/html-to-interaction-prompts"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "hack23/riksdagsmonitor:advanced-data-visualization",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "hack23/riksdagsmonitor",
+        "skill_name": "advanced-data-visualization",
+        "family_key": "hack23/riksdagsmonitor:advanced-data-visualization",
+        "skills_sh_installs": 15,
+        "skills_sh_installs_display": "15",
+        "skills_sh_url": "https://skills.sh/hack23/riksdagsmonitor/advanced-data-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "adityaraj0421/naksha-studio:design",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "adityaraj0421/naksha-studio",
+        "skill_name": "design",
+        "family_key": "adityaraj0421/naksha-studio:design",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/adityaraj0421/naksha-studio/design"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yugasun/slides-skills:slides",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "yugasun/slides-skills",
+        "skill_name": "slides",
+        "family_key": "yugasun/slides-skills:slides",
+        "skills_sh_installs": 11,
+        "skills_sh_installs_display": "11",
+        "skills_sh_url": "https://skills.sh/yugasun/slides-skills/slides"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "hack23/cia:advanced-data-visualization",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "hack23/cia",
+        "skill_name": "advanced-data-visualization",
+        "family_key": "hack23/cia:advanced-data-visualization",
+        "skills_sh_installs": 10,
+        "skills_sh_installs_display": "10",
+        "skills_sh_url": "https://skills.sh/hack23/cia/advanced-data-visualization"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "wesley1600/claudecodeframework:data-analysis",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "wesley1600/claudecodeframework",
+        "skill_name": "data-analysis",
+        "family_key": "wesley1600/claudecodeframework:data-analysis",
+        "skills_sh_installs": 10,
+        "skills_sh_installs_display": "10",
+        "skills_sh_url": "https://skills.sh/wesley1600/claudecodeframework/data-analysis"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "adityaraj0421/design-studio:design",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "adityaraj0421/design-studio",
+        "skill_name": "design",
+        "family_key": "adityaraj0421/design-studio:design",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/adityaraj0421/design-studio/design"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "larsartmann/skills:html-report-kit",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "larsartmann/skills",
+        "skill_name": "html-report-kit",
+        "family_key": "larsartmann/skills:html-report-kit",
+        "skills_sh_installs": 9,
+        "skills_sh_installs_display": "9",
+        "skills_sh_url": "https://skills.sh/larsartmann/skills/html-report-kit"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "kenbanks-peng/skills:html-reports",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "kenbanks-peng/skills",
+        "skill_name": "html-reports",
+        "family_key": "kenbanks-peng/skills:html-reports",
+        "skills_sh_installs": 6,
+        "skills_sh_installs_display": "6",
+        "skills_sh_url": "https://skills.sh/kenbanks-peng/skills/html-reports"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "robonuggets/html-it:html-it",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "interactive chart gallery html report",
+        "owner_repo": "robonuggets/html-it",
+        "skill_name": "html-it",
+        "family_key": "robonuggets/html-it:html-it",
+        "skills_sh_installs": 5,
+        "skills_sh_installs_display": "5",
+        "skills_sh_url": "https://skills.sh/robonuggets/html-it/html-it"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openai/plugins:visualization-strategy-and-critique",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "advanced data visualization charts",
+        "owner_repo": "openai/plugins",
+        "skill_name": "visualization-strategy-and-critique",
+        "family_key": "openai/plugins:visualization-strategy-and-critique",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/openai/plugins/visualization-strategy-and-critique"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:prototype-openclaw-tui",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "prototype-openclaw-tui",
+        "author": "openclaw",
+        "description": "Build throwaway, fixture-driven OpenClaw Clack or Pi TUI prototypes and compare multiple interactive variants side by side in tmux without running the full application or touching live state.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/prototype-openclaw-tui",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-prototype-openclaw-tui",
+        "repo_stars": 385119,
+        "catalog_updated_at": "2026-07-31T00:27:58+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/prototype-openclaw-tui",
+        "family_key": "openclaw/openclaw:prototype-openclaw-tui",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:tmux",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "tmux",
+        "author": "openclaw",
+        "description": "Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/skills/tmux",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/skills-tmux",
+        "repo_stars": 385119,
+        "catalog_updated_at": "2026-05-17T10:50:27+00:00",
+        "source_key": "openclaw/openclaw:skills/tmux",
+        "family_key": "openclaw/openclaw:tmux",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:configure-ecc",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "configure-ecc",
+        "author": "affaan-m",
+        "description": "Interactive installer for Everything Claude Code — guides users through selecting and installing skills and rules to user-level or project-level directories, verifies paths, and optionally optimizes installed files.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/configure-ecc",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-configure-ecc",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/configure-ecc",
+        "family_key": "affaan-m/ecc:configure-ecc",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:frontend-a11y",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "frontend-a11y",
+        "author": "affaan-m",
+        "description": "Accessibility patterns for React and Next.js — semantic HTML, ARIA attributes, form labeling, keyboard navigation, focus management, and screen reader support. Use when building any interactive UI component or form.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/frontend-a11y",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-frontend-a11y",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/frontend-a11y",
+        "family_key": "affaan-m/ecc:frontend-a11y",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:generating-python-installer",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "generating-python-installer",
+        "author": "affaan-m",
+        "description": "Commercial-grade Python installer expert for Windows: Nuitka extreme compilation, dist slimming, DLL footprint analysis, and Inno Setup packaging to ship the smallest, fastest installers. Use only for advanced packaging/optimization (minimal size, fast startup), not basic script-to-exe conversion. 中文触发：Nuitka 极限优化、Python 商业打包、极限编译 Python、dist 瘦身、DLL 分析、最小安装包、最快启动、商业级打包风格",
+        "content_language": "mul",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/generating-python-installer",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-generating-python-installer",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-16T01:17:18+00:00",
+        "source_key": "affaan-m/ecc:skills/generating-python-installer",
+        "family_key": "affaan-m/ecc:generating-python-installer",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:iterative-retrieval",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "iterative-retrieval",
+        "author": "affaan-m",
+        "description": "サブエージェントのコンテキスト問題を解決するために、コンテキスト取得を段階的に洗練するパターン",
+        "content_language": "ja",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/iterative-retrieval",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/docs-ja-jp-skills-iterative-retrieval",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-03-30T01:21:18+00:00",
+        "source_key": "affaan-m/ecc:docs/ja-jp/skills/iterative-retrieval",
+        "family_key": "affaan-m/ecc:iterative-retrieval",
+        "aliases": [
+          {
+            "language": "ko",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ko-KR/skills/iterative-retrieval"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/iterative-retrieval"
+          },
+          {
+            "language": "ko",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ko-KR/skills/iterative-retrieval"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/iterative-retrieval"
+          }
+        ],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:liquid-glass-design",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "liquid-glass-design",
+        "author": "affaan-m",
+        "description": "iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/liquid-glass-design",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-liquid-glass-design",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-02-24T05:39:25+00:00",
+        "source_key": "affaan-m/ecc:skills/liquid-glass-design",
+        "family_key": "affaan-m/ecc:liquid-glass-design",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:motion-advanced",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "motion-advanced",
+        "author": "affaan-m",
+        "description": "Advanced motion patterns for React / Next.js — drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperative sequences (useAnimate), loaders, and the full API decision tree. Requires motion-foundations.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/motion-advanced",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-motion-advanced",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-05-12T05:47:05+00:00",
+        "source_key": "affaan-m/ecc:skills/motion-advanced",
+        "family_key": "affaan-m/ecc:motion-advanced",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/motion-advanced"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/motion-advanced"
+          }
+        ],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:react-performance",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "react-performance",
+        "author": "affaan-m",
+        "description": "React and Next.js performance optimization patterns adapted from Vercel Engineering's React Best Practices (https://github.com/vercel-labs/agent-skills). Organizes 70+ rules across 8 priority categories — waterfalls, bundle size, server-side, client fetching, re-render, rendering, JS micro-perf, advanced. Use when writing, reviewing, or refactoring React/Next.js code for performance.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/react-performance",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-react-performance",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/react-performance",
+        "family_key": "affaan-m/ecc:react-performance",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:repo-scan",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "repo-scan",
+        "author": "affaan-m",
+        "description": "Cross-stack source code asset audit — classifies every file, detects embedded third-party libraries, and delivers actionable four-level verdicts per module with interactive HTML reports.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/repo-scan",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-repo-scan",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/repo-scan",
+        "family_key": "affaan-m/ecc:repo-scan",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:team-builder",
+      "queries": [
+        "interactive chart gallery html report"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "team-builder",
+        "author": "affaan-m",
+        "description": "Interactive agent picker for composing and dispatching parallel teams",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/team-builder",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-team-builder",
+        "repo_stars": 237500,
+        "catalog_updated_at": "2026-07-04T03:00:51+00:00",
+        "source_key": "affaan-m/ecc:skills/team-builder",
+        "family_key": "affaan-m/ecc:team-builder",
+        "aliases": [],
+        "query": "interactive chart gallery html report"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "anthropics/claude-code:hook-development",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "hook-development",
+        "author": "anthropics",
+        "description": "This skill should be used when the user asks to \"create a hook\", \"add a PreToolUse/PostToolUse/Stop hook\", \"validate tool use\", \"implement prompt-based hooks\", \"use ${CLAUDE_PLUGIN_ROOT}\", \"set up event-driven automation\", \"block dangerous commands\", or mentions hook events (PreToolUse, PostToolUse, Stop, SubagentStop, SessionStart, SessionEnd, UserPromptSubmit, PreCompact, Notification). Provides comprehensive guidance for creating and implementing Claude Code plugin hooks with focus on advanced prompt-based hooks API.",
+        "content_language": "en",
+        "github_url": "https://github.com/anthropics/claude-code/tree/main/plugins/plugin-dev/skills/hook-development",
+        "skillsmp_url": "https://skillsmp.com/creators/anthropics/claude-code/plugins-plugin-dev-skills-hook-development",
+        "repo_stars": 140184,
+        "catalog_updated_at": "2025-11-17T12:09:00+00:00",
+        "source_key": "anthropics/claude-code:plugins/plugin-dev/skills/hook-development",
+        "family_key": "anthropics/claude-code:hook-development",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ruvnet/ruview:agentdb-advanced-features",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "agentdb-advanced-features",
+        "author": "ruvnet",
+        "description": "Master advanced AgentDB features including QUIC synchronization, multi-database management, custom distance metrics, hybrid search, and distributed systems integration. Use when building distributed AI systems, multi-agent coordination, or advanced vector search applications.",
+        "content_language": "en",
+        "github_url": "https://github.com/ruvnet/RuView/tree/main/.claude/skills/agentdb-advanced",
+        "skillsmp_url": "https://skillsmp.com/creators/ruvnet/ruview/claude-skills-agentdb-advanced",
+        "repo_stars": 88440,
+        "catalog_updated_at": "2026-01-13T03:11:16+00:00",
+        "source_key": "ruvnet/ruview:.claude/skills/agentdb-advanced",
+        "family_key": "ruvnet/ruview:agentdb-advanced-features",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ruvnet/ruview:github-workflow-automation",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "github-workflow-automation",
+        "author": "ruvnet",
+        "description": "Advanced GitHub Actions workflow automation with AI swarm coordination, intelligent CI/CD pipelines, and comprehensive repository management",
+        "content_language": "en",
+        "github_url": "https://github.com/ruvnet/RuView/tree/main/.claude/skills/github-workflow-automation",
+        "skillsmp_url": "https://skillsmp.com/creators/ruvnet/ruview/claude-skills-github-workflow-automation",
+        "repo_stars": 88440,
+        "catalog_updated_at": "2026-01-13T03:11:16+00:00",
+        "source_key": "ruvnet/ruview:.claude/skills/github-workflow-automation",
+        "family_key": "ruvnet/ruview:github-workflow-automation",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ruvnet/ruview:ruview-advanced-sensing",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "ruview-advanced-sensing",
+        "author": "ruvnet",
+        "description": "Advanced RuView capabilities — RuvSense multistatic sensing (attention-weighted fusion, geometric diversity, persistent field model), cross-viewpoint fusion across multiple nodes, RF tomography (ISTA L1 solver, voxel grids), longitudinal biomechanics drift, pre-movement intention signals, adversarial signal detection, and multistatic mesh security hardening. Use for research-grade or multi-node deployments.",
+        "content_language": "en",
+        "github_url": "https://github.com/ruvnet/RuView/tree/main/plugins/ruview/skills/ruview-advanced-sensing",
+        "skillsmp_url": "https://skillsmp.com/creators/ruvnet/ruview/plugins-ruview-skills-ruview-advanced-sensing",
+        "repo_stars": 88440,
+        "catalog_updated_at": "2026-05-11T21:39:16+00:00",
+        "source_key": "ruvnet/ruview:plugins/ruview/skills/ruview-advanced-sensing",
+        "family_key": "ruvnet/ruview:ruview-advanced-sensing",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ruvnet/ruview:swarm-advanced",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "swarm-advanced",
+        "author": "ruvnet",
+        "description": "Advanced swarm orchestration patterns for research, development, testing, and complex distributed workflows",
+        "content_language": "en",
+        "github_url": "https://github.com/ruvnet/RuView/tree/main/.claude/skills/swarm-advanced",
+        "skillsmp_url": "https://skillsmp.com/creators/ruvnet/ruview/claude-skills-swarm-advanced",
+        "repo_stars": 88440,
+        "catalog_updated_at": "2026-01-13T03:11:16+00:00",
+        "source_key": "ruvnet/ruview:.claude/skills/swarm-advanced",
+        "family_key": "ruvnet/ruview:swarm-advanced",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:gpt-taste",
+      "queries": [
+        "advanced data visualization charts"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "gpt-taste",
+        "author": "nexu-io",
+        "description": "Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and massive section spacing.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/skills/gpt-tasteskill",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/skills-gpt-tasteskill",
+        "repo_stars": 83535,
+        "catalog_updated_at": "2026-06-02T07:34:30+00:00",
+        "source_key": "nexu-io/open-design:skills/gpt-tasteskill",
+        "family_key": "nexu-io/open-design:gpt-taste",
+        "aliases": [],
+        "query": "advanced data visualization charts"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "aden-hive/hive:hive-chart-creation-foundations",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "hive-chart-creation-foundations",
+        "author": "aden-hive",
+        "description": "Required reading whenever any chart_* tool is available. Teaches the one-tool embedding contract (call chart_render → live chart appears in chat AND a downloadable PNG lands in the queen session dir), the ECharts (data viz) vs Mermaid (structural diagrams) decision, the BI/financial-grade aesthetic baseline (no chartjunk, restrained palette, proper typography, single message per chart), and the canonical spec patterns for the 12 most-common chart types. Skipping this leads to 1990s-Excel charts, missing downloads, and the agent writing markdown image links by hand instead of letting chart_render drive the UI.",
+        "content_language": "en",
+        "github_url": "https://github.com/aden-hive/hive/tree/main/core/framework/skills/_preset_skills/chart-creation-foundations",
+        "skillsmp_url": "https://skillsmp.com/creators/aden-hive/hive/core-framework-skills-preset-skills-chart-creation-foundations",
+        "repo_stars": 10845,
+        "catalog_updated_at": "2026-05-01T21:57:06+00:00",
+        "source_key": "aden-hive/hive:core/framework/skills/_preset_skills/chart-creation-foundations",
+        "family_key": "aden-hive/hive:hive-chart-creation-foundations",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openai/plugins:threejs-data-visualization",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "threejs-data-visualization",
+        "author": "openai",
+        "description": "Render WebGL-accelerated data visualizations with Three.js, raw WebGL, deck.gl, luma.gl, PixiJS, Sigma.js, Plotly WebGL traces, ECharts GL, CesiumJS, Babylon.js, or related GPU libraries. Use when the visualization needs true spatial structure, dense 2D or 3D GPU rendering, particle or flow animation, volumetric views, or interactive exploration that adds real analytical value.",
+        "content_language": "en",
+        "github_url": "https://github.com/openai/plugins/tree/main/plugins/build-web-data-visualization/skills/threejs-data-visualization",
+        "skillsmp_url": "https://skillsmp.com/creators/openai/plugins/plugins-build-web-data-visualization-skills-threejs-data-visualization",
+        "repo_stars": 4917,
+        "catalog_updated_at": "2026-05-26T23:46:07+00:00",
+        "source_key": "openai/plugins:plugins/build-web-data-visualization/skills/threejs-data-visualization",
+        "family_key": "openai/plugins:threejs-data-visualization",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "opensensenova/sensenova-skills:sn-ppt-entry",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "sn-ppt-entry",
+        "author": "OpenSenseNova",
+        "description": "Entry point for PPT generation. Asks the user to choose a mode (fast,\nstandard, or creative), then collects role / audience / scene / page_count\nas needed. For standard mode, also asks how images should be sourced (AI\ngeneration, web search, or none), whether charts should use AI-generated\ninfographics or ECharts, and whether the final deliverable should be PPTX or\nPDF. Parses uploaded pdf/docx/md/txt files, produces\ntask_pack.json + info_pack.json in a new deck_dir, then dispatches to\nsn-ppt-creative or sn-ppt-standard. Fast mode skips optional questions and\ngets straight to building. Use when the user asks to make a PPT /\npresentation / 演示 / PPT. If the user asks to open, preview, inspect, or\nedit previously generated HTML slides in the WebUI/workbench without\nregenerating, dispatch to sn-ppt-workbench instead of this generation entry.",
+        "content_language": "en",
+        "github_url": "https://github.com/OpenSenseNova/SenseNova-Skills/tree/main/skills/sn-ppt-entry",
+        "skillsmp_url": "https://skillsmp.com/creators/opensensenova/sensenova-skills/skills-sn-ppt-entry",
+        "repo_stars": 4855,
+        "catalog_updated_at": "2026-07-23T09:54:09+00:00",
+        "source_key": "opensensenova/sensenova-skills:skills/sn-ppt-entry",
+        "family_key": "opensensenova/sensenova-skills:sn-ppt-entry",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "opensensenova/sensenova-skills:sn-ppt-standard",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "sn-ppt-standard",
+        "author": "OpenSenseNova",
+        "description": "Standard and fast PPT pipeline. All LLM / VLM / T2I calls are wrapped in a\nsingle CLI entry (scripts/run_stage.py). The main agent's job is simple:\nemit ONE shell command per stage, never write loops, never write prompts.\n\nStandard mode plans thoroughly with a three-sample deck preview checkpoint\n(three concatenated deck images plus a preview URL), web research, image\nsearch, and user-selected final output format (PPTX or PDF) for polished,\ndelivery-ready presentations. Fast mode builds\na complete draft immediately with autonomous decisions, then provides\nstructured refinement suggestions so the user can iterate quickly. Supports\nAI-generated infographics (U1) for diagrams and flowcharts, web image search\n(Serper) for real photos, and ECharts for data charts.",
+        "content_language": "en",
+        "github_url": "https://github.com/OpenSenseNova/SenseNova-Skills/tree/main/skills/sn-ppt-standard",
+        "skillsmp_url": "https://skillsmp.com/creators/opensensenova/sensenova-skills/skills-sn-ppt-standard",
+        "repo_stars": 4855,
+        "catalog_updated_at": "2026-07-28T08:36:30+00:00",
+        "source_key": "opensensenova/sensenova-skills:skills/sn-ppt-standard",
+        "family_key": "opensensenova/sensenova-skills:sn-ppt-standard",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "brycewang-stanford/auto-empirical-research-skills:echarts-visualization-guide",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "echarts-visualization-guide",
+        "author": "brycewang-stanford",
+        "description": "Guide to Apache ECharts for interactive research data dashboards",
+        "content_language": "en",
+        "github_url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/43-wentorai-research-plugins/skills/analysis/dataviz/echarts-visualization-guide",
+        "skillsmp_url": "https://skillsmp.com/creators/brycewang-stanford/auto-empirical-research-skills/skills-43-wentorai-research-plugins-skills-analysis-dataviz-echarts-visualization-guide",
+        "repo_stars": 3161,
+        "catalog_updated_at": "2026-04-03T02:07:17+00:00",
+        "source_key": "brycewang-stanford/auto-empirical-research-skills:skills/43-wentorai-research-plugins/skills/analysis/dataviz/echarts-visualization-guide",
+        "family_key": "brycewang-stanford/auto-empirical-research-skills:echarts-visualization-guide",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "brycewang-stanford/auto-empirical-research-skills:interactive-viz-guide",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "interactive-viz-guide",
+        "author": "brycewang-stanford",
+        "description": "Interactive data visualization with Plotly, ECharts, and D3",
+        "content_language": "en",
+        "github_url": "https://github.com/brycewang-stanford/Auto-Empirical-Research-Skills/tree/main/skills/43-wentorai-research-plugins/skills/analysis/dataviz/interactive-viz-guide",
+        "skillsmp_url": "https://skillsmp.com/creators/brycewang-stanford/auto-empirical-research-skills/skills-43-wentorai-research-plugins-skills-analysis-dataviz-interactive-viz-guide",
+        "repo_stars": 3161,
+        "catalog_updated_at": "2026-04-03T02:07:17+00:00",
+        "source_key": "brycewang-stanford/auto-empirical-research-skills:skills/43-wentorai-research-plugins/skills/analysis/dataviz/interactive-viz-guide",
+        "family_key": "brycewang-stanford/auto-empirical-research-skills:interactive-viz-guide",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "freedomintelligence/openclaw-medical-skills:health-trend-analyzer",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "health-trend-analyzer",
+        "author": "FreedomIntelligence",
+        "description": "分析一段时间内健康数据的趋势和模式。关联药物、症状、生命体征、化验结果和其他健康指标的变化。识别令人担忧的趋势、改善情况，并提供数据驱动的洞察。当用户询问健康趋势、模式、随时间的变化或\"我的健康状况有什么变化？\"时使用。支持多维度分析（体重/BMI、症状、药物依从性、化验结果、情绪睡眠），相关性分析，变化检测，以及交互式HTML可视化报告（ECharts图表）。",
+        "content_language": "zh",
+        "github_url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills/tree/main/skills/health-trend-analyzer",
+        "skillsmp_url": "https://skillsmp.com/creators/freedomintelligence/openclaw-medical-skills/skills-health-trend-analyzer",
+        "repo_stars": 2908,
+        "catalog_updated_at": "2026-03-08T11:04:10+00:00",
+        "source_key": "freedomintelligence/openclaw-medical-skills:skills/health-trend-analyzer",
+        "family_key": "freedomintelligence/openclaw-medical-skills:health-trend-analyzer",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "imzbf/md-editor-v3:md-editor-v3",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "md-editor-v3",
+        "author": "imzbf",
+        "description": "集成、定制或排查 md-editor-v3 时使用。适用于在 Vue 3、Nuxt、Electron 或 Web Component 项目中接入 MdEditor、MdPreview、MdCatalog，给 md-editor-v3 增加图片上传、目录联动、自定义工具栏、主题/语言、markdown-it 与 CodeMirror 扩展、config() 全局依赖替换，以及处理 SSR、样式、MdCatalog 滚动、高亮/公式/mermaid/echarts、本地实例替代 CDN、XSS 与副作用等常见问题。",
+        "content_language": "zh",
+        "github_url": "https://github.com/imzbf/md-editor-v3/tree/develop/skills/md-editor-v3",
+        "skillsmp_url": "https://skillsmp.com/creators/imzbf/md-editor-v3/skills-md-editor-v3",
+        "repo_stars": 2569,
+        "catalog_updated_at": "2026-04-28T07:11:51+00:00",
+        "source_key": "imzbf/md-editor-v3:skills/md-editor-v3",
+        "family_key": "imzbf/md-editor-v3:md-editor-v3",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "apconw/aix-db:report-generation",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "report-generation",
+        "author": "apconw",
+        "description": "生成数据分析报告：探索表结构 → 多维度查询 → 智能深度分析归因 → 动态风格 HTML 可视化报告（ECharts）",
+        "content_language": "zh",
+        "github_url": "https://github.com/apconw/Aix-DB/tree/master/agent/deepagent/skills/report-generation",
+        "skillsmp_url": "https://skillsmp.com/creators/apconw/aix-db/agent-deepagent-skills-report-generation",
+        "repo_stars": 2207,
+        "catalog_updated_at": "2026-04-11T03:42:44+00:00",
+        "source_key": "apconw/aix-db:agent/deepagent/skills/report-generation",
+        "family_key": "apconw/aix-db:report-generation",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "alpha-dojo/dojoagents:canvas-chart",
+      "queries": [
+        "echarts d3 visualization"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "canvas-chart",
+        "author": "Alpha-Dojo",
+        "description": "Canvas chart rendering skill. Teaches the agent to output DOJO_CHART blocks for rendering interactive ECharts visualizations in the Dashboard Canvas panel.",
+        "content_language": "en",
+        "github_url": "https://github.com/Alpha-Dojo/DojoAgents/tree/main/dojoagents/skills/built_in/canvas-chart",
+        "skillsmp_url": "https://skillsmp.com/creators/alpha-dojo/dojoagents/dojoagents-skills-built-in-canvas-chart",
+        "repo_stars": 2187,
+        "catalog_updated_at": "2026-06-05T09:37:12+00:00",
+        "source_key": "alpha-dojo/dojoagents:dojoagents/skills/built_in/canvas-chart",
+        "family_key": "alpha-dojo/dojoagents:canvas-chart",
+        "aliases": [],
+        "query": "echarts d3 visualization"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [
+    "skills.sh `echarts d3 visualization`: skills.sh returned no parseable candidates"
+  ],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

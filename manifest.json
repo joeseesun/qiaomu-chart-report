@@ -1,0 +1,44 @@
+{
+  "name": "qiaomu-chart-report",
+  "version": "1.0.0",
+  "owner": "Qiaomu",
+  "updated_at": "2026-08-10",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "public",
+  "context_budget_tier": "production",
+  "review_cadence": "quarterly",
+  "target_platforms": ["openai", "claude", "generic", "agent-skills-compatible"],
+  "permissions": {
+    "network": "off by default",
+    "file_write": "approved output directory and temporary browser profile",
+    "subprocess": "local Python and Chrome/Chromium only"
+  },
+  "release_gates": [
+    "package_validation",
+    "unit_tests",
+    "trigger_eval",
+    "skill_ir_export",
+    "static_html_audit",
+    "desktop_chrome_capture",
+    "mobile_chrome_capture",
+    "manual_visual_open",
+    "vendor_integrity_check",
+    "chart_gallery_runtime_check",
+    "thirteen_chart_ready_gate",
+    "vercel_monochrome_default_gate",
+    "cjk_display_leading_gate",
+    "chart_color_separation_gate",
+    "solid_chart_fill_gate"
+  ],
+  "evidence_boundary": {
+    "local_validation": true,
+    "recorded_fixture": true,
+    "provider_backed": false,
+    "human_blind_review": false,
+    "cross_platform_runtime": false
+  },
+  "copyright": "Copyright (c) 向阳乔木",
+  "x": "https://x.com/vista8",
+  "github": "https://github.com/joeseesun/"
+}
