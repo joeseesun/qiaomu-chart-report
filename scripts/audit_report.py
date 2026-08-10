@@ -36,6 +36,38 @@ def remote_urls(text: str) -> list[str]:
     return sorted(urls)
 
 
+def section_heading_alignment_violations(markup: str) -> dict[str, object]:
+    """Find section-heading CSS that breaks the default shared left edge."""
+    css = "\n".join(re.findall(r"<style\b[^>]*>(.*?)</style>", markup, re.I | re.S))
+    fixed_leading_columns: list[str] = []
+    non_left_alignment: list[str] = []
+    section_head_selector = re.compile(
+        r"(?:\.q-section-head\b|\.section-head\b|\[data-qiaomu-section-head(?:\]|[=\s]))",
+        re.I,
+    )
+    fixed_first_column = re.compile(
+        r"^\s*(?:"
+        r"\d+(?:\.\d+)?(?:px|rem|em|vw)|"
+        r"minmax\(\s*\d+(?:\.\d+)?(?:px|rem|em|vw)\s*,[^)]+\)"
+        r")\s+",
+        re.I,
+    )
+    for selector, declarations in re.findall(r"([^{}]+)\{([^{}]*)\}", css, re.S):
+        selector = selector.strip()
+        if not section_head_selector.search(selector):
+            continue
+        columns_match = re.search(r"grid-template-columns\s*:\s*([^;]+)", declarations, re.I)
+        if columns_match and fixed_first_column.search(columns_match.group(1)):
+            fixed_leading_columns.append(f"{selector}: {columns_match.group(1).strip()}")
+        alignment_match = re.search(r"text-align\s*:\s*(center|right|end)\b", declarations, re.I)
+        if alignment_match:
+            non_left_alignment.append(f"{selector}: {alignment_match.group(1).lower()}")
+    return {
+        "fixed_leading_column_rules": fixed_leading_columns,
+        "non_left_text_rules": non_left_alignment,
+    }
+
+
 def audit(path: Path, allow_remote: bool) -> dict[str, object]:
     text = path.read_text(encoding="utf-8")
     lower = text.lower()
@@ -165,6 +197,13 @@ def audit(path: Path, allow_remote: bool) -> dict[str, object]:
             errors.append("CJK display title leading must use --display-leading-cjk at 1.08 or above")
         if cjk_document and not cjk_selector_uses_token:
             errors.append("CJK display title needs a language-aware selector using --display-leading-cjk")
+        section_alignment = section_heading_alignment_violations(markup)
+        section_alignment["policy"] = "section labels sit above headings; hero, headings, descriptions and primary content share a left edge"
+        style_checks["section_heading_alignment"] = section_alignment
+        if section_alignment["fixed_leading_column_rules"]:
+            errors.append("section headings must share the primary left edge; fixed leading section-head columns are forbidden")
+        if section_alignment["non_left_text_rules"]:
+            errors.append("section heading containers must remain left-aligned by default")
         chart_palette = re.findall(r"--chart-[1-8]\s*:\s*(#[0-9a-f]{6})", markup_lower)
         colorful_chart_tokens = []
         for value in chart_palette:

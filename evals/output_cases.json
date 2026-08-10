@@ -65,6 +65,8 @@
       "page shell remains monochrome while chart recipes expose a distinct multi-color data palette",
       "chart color is reinforced by labels, line style, texture, shape, or ordering and is not the only encoding",
       "global ECharts aria decal is disabled so default chart fills render as clean solid colors without automatic hatching",
+      "section labels sit above headings and hero/section headings/descriptions/primary content share a stable left edge",
+      "fixed leading section-head columns such as 180px 1fr are rejected by the audit",
       "desktop and mobile screenshots are opened after restyling"
     ]
   }

@@ -1,7 +1,7 @@
 {
   "ok": true,
   "file": "evals/fixtures/quarterly-report.html",
-  "bytes": 11134,
+  "bytes": 11110,
   "errors": [],
   "warnings": [],
   "checks": {
@@ -47,6 +47,11 @@
         "document_is_cjk": true,
         "token": 1.12,
         "language_selector_uses_token": true
+      },
+      "section_heading_alignment": {
+        "fixed_leading_column_rules": [],
+        "non_left_text_rules": [],
+        "policy": "section labels sit above headings; hero, headings, descriptions and primary content share a left edge"
       },
       "chart_color_separation": {
         "chart_count": 0,

@@ -42,7 +42,7 @@
     .kpi strong { display: block; font-size: 34px; line-height: 1.1; font-variant-numeric: tabular-nums; }
     .kpi span { color: var(--muted); font-size: 13px; }
     section { margin-top: 72px; }
-    .section-head { display: grid; grid-template-columns: 190px 1fr; gap: 24px; margin-bottom: 30px; }
+    .section-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-bottom: 30px; }
     .section-head .label { color: var(--support); font-size: 13px; font-weight: 750; letter-spacing: .08em; }
     h2 { margin: 0; font-size: clamp(30px, 4vw, 48px); font-weight: 600; line-height: 1.08; letter-spacing: -.04em; }
     .chart { padding: 34px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
@@ -74,7 +74,7 @@
       .summary { grid-template-columns: 1fr; }
       .finding, .chart { padding: 24px; }
       .kpi { padding: 18px; }
-      .section-head { grid-template-columns: 1fr; gap: 8px; }
+      .section-head { gap: 8px; }
       section { margin-top: 54px; }
       .chart-title { display: block; }
       .chart-title p { margin-top: 6px; }

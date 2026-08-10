@@ -19,6 +19,7 @@ output/
 - `<!doctype html>`、`lang`、viewport、非空 title、唯一 h1、main 区域。
 - CSS tokens 管理颜色、字号、间距、边界和宽度。
 - 默认 `<html data-qiaomu-style="vercel-monochrome">`，使用 `assets/styles/vercel-monochrome.css` 的黑白 tokens；自定义主题必须显式写成其他 profile 并在计划中说明。
+- 默认章节头保持统一左对齐：章节标签在标题上方，标签、标题、说明与主要内容共享容器左边线；审计会阻断固定前导栏造成的标题右移。
 - 统计口径、单位、日期、来源和 missing evidence 可见。
 - 图表有语义标签或文本/表格替代；无伪造数字和占位符。
 - 复杂图使用内置固定版本 runtime 与 recipes；只嵌入实际需要的 ECharts/D3，调用 `QiaomuCharts.ready()`。
