@@ -25,9 +25,27 @@ class ChartReportRegressionTests(unittest.TestCase):
         manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         self.assertEqual(manifest["name"], "qiaomu-chart-report")
-        self.assertEqual(manifest["version"], "1.0.1")
+        self.assertEqual(manifest["version"], "1.1.0")
         self.assertIn("name: qiaomu-chart-report", skill)
-        self.assertIn('version: "1.0.1"', skill)
+        self.assertIn('version: "1.1.0"', skill)
+
+    def test_number_provenance_flags_numbers_missing_from_data(self) -> None:
+        audit_module = load_audit_module()
+        html = (
+            "<!doctype html><html lang=\"zh\"><head><meta name=\"viewport\" content=\"width=device-width\">"
+            "<title>t</title><style>:root{--a:1}</style></head><body><main><h1>2025 年收入 1,234.5 万</h1>"
+            "<p>同比增长 18.2%，第 3 节；客单价 87 元。</p></main></body></html>"
+        )
+        with tempfile.TemporaryDirectory() as temp_dir:
+            page = Path(temp_dir) / "r.html"
+            page.write_text(html, encoding="utf-8")
+            data = Path(temp_dir) / "metrics.json"
+            data.write_text('{"revenue": 1234.47, "growth": 0.1817}', encoding="utf-8")
+            loose = audit_module.audit(page, allow_remote=False, data_paths=[data])
+            strict = audit_module.audit(page, allow_remote=False, data_paths=[data], strict_numbers=True)
+        self.assertEqual(loose["checks"]["number_provenance"]["unmatched"], ["87"])
+        self.assertTrue(any("without a source" in w for w in loose["warnings"]))
+        self.assertTrue(any("without a source" in e for e in strict["errors"]))
 
     def test_default_chart_fills_disable_global_decal(self) -> None:
         recipes = (ROOT / "assets" / "chart-recipes.js").read_text(encoding="utf-8")

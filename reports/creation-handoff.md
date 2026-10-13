@@ -1,3 +1,9 @@
+## v1.1.0 — 2026-10-13
+
+- Added `number_provenance` to `scripts/audit_report.py` (`--data`, `--strict-numbers`) with a unit test; single-source numbers, grounded annotations and interactive-figure courtesy rules; routing boundary to `anatomy`.
+- Reference studied: `wheresryan22/anatomy` (MIT); methods adapted, no text or code copied. Highlights are design advantages (hypothesis) until output evidence exists.
+- Validation: package validator and unit tests rerun locally.
+
 # Creation Handoff
 
 ## Result

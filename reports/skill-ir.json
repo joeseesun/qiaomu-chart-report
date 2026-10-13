@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0.0-qiaomu-lite",
-  "generated_at": "2026-08-10",
+  "generated_at": "2026-10-13",
   "package": {
     "name": "qiaomu-chart-report",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "owner": "Qiaomu",
     "maturity_tier": "production",
     "lifecycle_stage": "public",
@@ -11,8 +11,8 @@
     "upstream_sync": {}
   },
   "intent": {
-    "description": "将文本、Markdown、CSV/JSON/表格数据、研究材料或统计结果制作成自包含 HTML 可视化网页、数据故事和统计报告，并渲染为经过检查的桌面端与移动端 PNG 截图。适用于“生成 HTML 报告”“把数据做成网页”“统计报告可视化”“网页化分析”“做一个清晰表达的单页网页”“有趣/高级图表”“桑基图、旭日图、蜂群图、山脊图、弦图、排名变化图”“HTML dashboard/report”“生成网页和截图”等请求。内置离线 Apache ECharts 与 D3、可复用复杂图表 recipes、事实可追溯、结论先行、图表语义选择、编辑式信息层级、响应式降级和真实浏览器截图。不要用于完整网站/应用开发、营销落地页、HTML 封面/信息卡、幻灯片、仅分析数据而不需要网页交付，或只截取现有网页。\n",
-    "job_to_be_done": "将文本、Markdown、CSV/JSON/表格数据、研究材料或统计结果制作成自包含 HTML 可视化网页、数据故事和统计报告，并渲染为经过检查的桌面端与移动端 PNG 截图。适用于“生成 HTML 报告”“把数据做成网页”“统计报告可视化”“网页化分析”“做一个清晰表达的单页网页”“有趣/高级图表”“桑基图、旭日图、蜂群图、山脊图、弦图、排名变化图”“HTML dashboard/report”“生成网页和截图”等请求。内置离线 Apache ECharts 与 D3、可复用复杂图表 recipes、事实可追溯、结论先行、图表语义选择、编辑式信息层级、响应式降级和真实浏览器截图。不要用于完整网站/应用开发、营销落地页、HTML 封面/信息卡、幻灯片、仅分析数据而不需要网页交付，或只截取现有网页。\n",
+    "description": "将文本、Markdown、CSV/JSON/表格数据、研究材料或统计结果制作成自包含 HTML 可视化网页、数据故事和统计报告，并渲染为经过检查的桌面端与移动端 PNG 截图。适用于“生成 HTML 报告”“把数据做成网页”“统计报告可视化”“网页化分析”“做一个清晰表达的单页网页”“有趣/高级图表”“桑基图、旭日图、蜂群图、山脊图、弦图、排名变化图”“HTML dashboard/report”“生成网页和截图”等请求。内置离线 Apache ECharts 与 D3、可复用复杂图表 recipes、事实可追溯、结论先行、图表语义选择、编辑式信息层级、响应式降级和真实浏览器截图。不要用于完整网站/应用开发、营销落地页、HTML 封面/信息卡、幻灯片、仅分析数据而不需要网页交付、只截取现有网页，或用一台会动的实物机器讲解“某个系统/算法如何运作”的等距交互图（交给 anatomy）。\n",
+    "job_to_be_done": "将文本、Markdown、CSV/JSON/表格数据、研究材料或统计结果制作成自包含 HTML 可视化网页、数据故事和统计报告，并渲染为经过检查的桌面端与移动端 PNG 截图。适用于“生成 HTML 报告”“把数据做成网页”“统计报告可视化”“网页化分析”“做一个清晰表达的单页网页”“有趣/高级图表”“桑基图、旭日图、蜂群图、山脊图、弦图、排名变化图”“HTML dashboard/report”“生成网页和截图”等请求。内置离线 Apache ECharts 与 D3、可复用复杂图表 recipes、事实可追溯、结论先行、图表语义选择、编辑式信息层级、响应式降级和真实浏览器截图。不要用于完整网站/应用开发、营销落地页、HTML 封面/信息卡、幻灯片、仅分析数据而不需要网页交付、只截取现有网页，或用一台会动的实物机器讲解“某个系统/算法如何运作”的等距交互图（交给 anatomy）。\n",
     "target_users": [
       "Qiaomu operator"
     ],
@@ -41,7 +41,8 @@
       "为产品做一个营销落地页",
       "把现有网站截个图，website screenshot only",
       "做一张 16:9 的 HTML 封面图",
-      "Create a slide deck for the board meeting."
+      "Create a slide deck for the board meeting.",
+      "画一张等距交互图，用一台会动的机器讲清楚 LRU 缓存怎么淘汰条目"
     ],
     "near_neighbor": [
       "把这段内容做成小红书信息卡",
@@ -66,24 +67,7 @@
     "scripts": [
       "scripts/audit_report.py",
       "scripts/embed_chart_lib.py",
-      "scripts/render_html.mjs",
       "scripts/verify_vendor.py"
-    ],
-    "tests": [
-      "tests/__init__.py",
-      "tests/test_chart_report.py"
-    ],
-    "assets": [
-      "assets/styles/vercel-monochrome.css",
-      "assets/chart-recipes.js",
-      "assets/vendor/NOTICE.md",
-      "assets/vendor/d3-7.9.0/LICENSE",
-      "assets/vendor/d3-7.9.0/d3.min.js",
-      "assets/vendor/echarts-6.1.0/LICENSE",
-      "assets/vendor/echarts-6.1.0/echarts.min.js",
-      "assets/qiaomu-profile/qiaomu_avatar.jpeg",
-      "assets/qiaomu-profile/qiaomu_reward_qr.png",
-      "assets/qiaomu-profile/qiaomu_wechat_public_account_qr.jpg"
     ],
     "evals": [
       "evals/fixtures/chart-gallery.template.html",
