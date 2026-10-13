@@ -25,6 +25,7 @@
 - Gray `#666666` secondary text and `#eaeaea` borders.
 - Sans-serif hero with controlled negative letter-spacing; Latin display leading defaults to `1.02`, while CJK defaults to `1.12` and may not fall below the `1.08` audit floor. “Tight” must never mean vertically cramped.
 - 8px radius, no heavy shadow, no colorful card wall.
+- One stable content axis: Hero, section label, heading, description and primary content share a left edge; section labels sit above headings instead of occupying a fixed leading column.
 - The webpage shell remains monochrome, but charts have an independent data-color layer: categorical palettes, sequential scales and fixed positive/negative semantic colors are allowed by default. Labels, shapes, line styles, textures or ordering must reinforce color.
 - Explicit user theme/brand/reference always overrides this default.
 
@@ -36,6 +37,7 @@
 - Both Chinese fixtures pass the CJK leading gate and were re-rendered at desktop and mobile widths after the correction.
 - The regenerated gallery passes the chart-color separation gate: eight non-neutral chart tokens are present while the page shell retains its monochrome tokens.
 - The gallery also passes the solid-fill gate: ECharts ARIA remains enabled, but global decal textures are disabled; accessibility redundancy comes from labels, shapes, line styles, ordering and textual summaries unless a specific chart explicitly opts into texture.
+- The quarterly fixture passes the section-heading alignment gate; its former fixed `190px 1fr` heading grid was replaced by a single-column label-above-title pattern and re-rendered at desktop/mobile widths.
 
 ## Missing evidence
 

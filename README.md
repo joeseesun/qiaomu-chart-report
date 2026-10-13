@@ -33,7 +33,7 @@ npx skills add joeseesun/qiaomu-chart-report
 
 默认用 ECharts；只有弦图、蜂群、山脊等特殊布局才加载 D3。完整选择条件、反例和移动端降级见 `references/open-source-chart-system.md`。
 
-默认样式基准位于 `assets/styles/vercel-monochrome.css`，完整视觉边界见 `references/vercel-monochrome-style.md`。
+默认样式基准位于 `assets/styles/vercel-monochrome.css`，完整视觉边界见 `references/vercel-monochrome-style.md`。默认章节编号位于标题上方，Hero、章节标题、说明文字和主要内容共享同一条左边线；审计会阻止固定前导栏把标题整体推右。
 
 图库回归：`reports/chart-gallery.html`、`chart-gallery-desktop.png`、`chart-gallery-mobile.png`。图库包含 13 个实际运行的图表，不只是静态清单。
 
@@ -99,6 +99,7 @@ npx skills add joeseesun/qiaomu-chart-report
 - 截图过长被截断：提高 `--max-height`，或用 `--selector` 分段截图并说明范围。
 - 字体/图片未加载：优先内嵌或本地化资源；远程资源需明确授权并记录依赖。
 - audit 报占位符：删除 `TODO`、`Lorem ipsum`、`{{...}}` 等未完成内容后再交付。
+- audit 报章节标题错位：删除 `.section-head` / `.q-section-head` 的固定前导列（如 `180px 1fr`），改成单列布局，并把章节标签放在标题上方。
 
 ## 致谢
 

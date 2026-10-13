@@ -1,8 +1,14 @@
+## v1.1.0 — 2026-10-13
+
+- Added `number_provenance` to `scripts/audit_report.py` (`--data`, `--strict-numbers`) with a unit test; single-source numbers, grounded annotations and interactive-figure courtesy rules; routing boundary to `anatomy`.
+- Reference studied: `wheresryan22/anatomy` (MIT); methods adapted, no text or code copied. Highlights are design advantages (hypothesis) until output evidence exists.
+- Validation: package validator and unit tests rerun locally.
+
 # Creation Handoff
 
 ## Result
 
-- Skill: `qiaomu-chart-report` 1.0.0
+- Skill: `qiaomu-chart-report` 1.0.1
 - Job: turn text/data/research/statistics into a self-contained evidence-led HTML report with pinned open-source ECharts/D3 recipes and verified desktop/mobile PNG screenshots.
 - Default visual: Vercel/Geist-inspired light monochrome, explicitly chosen by the user; custom brands/themes override it.
 - Canonical install path: `~/.agents/skills/qiaomu-chart-report`
@@ -37,6 +43,7 @@
 - **Validated correction:** language-aware display tokens separate Latin (`1.02`) and CJK (`1.12`) leading; the audit rejects CJK display leading below `1.08`, and both Chinese fixtures pass desktop/mobile visual review.
 - **Validated correction:** monochrome now applies only to the webpage shell. Chart recipes use an eight-color data palette plus fixed positive/negative semantic colors, while labels, shapes, decals and ordering remain redundant encodings. The regenerated 13-chart gallery passes desktop/mobile runtime and visual review.
 - **Validated correction:** global ECharts `aria.decal` is disabled, so the default categorical, heatmap, hierarchy and flow fills render without automatic hatching. A static gate rejects re-enabling the global decal; texture remains opt-in per chart.
+- **Validated correction:** section labels now sit above headings on the same content axis. The static audit rejects fixed leading section-header columns and non-left section-head text alignment; the quarterly fixture passes regenerated desktop/mobile visual review.
 - **Hypothesis:** the paired screenshot gate will reduce mobile/report layout failures; provider-backed comparison and human blind review are missing evidence.
 
 ## Verification and limits

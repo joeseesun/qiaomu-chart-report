@@ -19,6 +19,55 @@ PLACEHOLDERS = [
 ]
 
 
+NUMBER_TOKEN = re.compile(r"(?<![\w.#-])-?\d[\d,]*(?:\.\d+)?%?")
+
+
+def _numeric_values(text: str) -> list[tuple[float, int, bool]]:
+    values = []
+    for token in NUMBER_TOKEN.findall(text):
+        percent = token.endswith("%")
+        raw = token.rstrip("%").replace(",", "")
+        try:
+            value = float(raw)
+        except ValueError:
+            continue
+        decimals = len(raw.split(".")[1]) if "." in raw else 0
+        values.append((value, decimals, percent))
+    return values
+
+
+def _is_trivial_number(value: float, decimals: int, percent: bool) -> bool:
+    if percent:
+        return False
+    if decimals == 0 and 0 <= value <= 12:
+        return True  # section numbers, small counts, months
+    if decimals == 0 and 1900 <= value <= 2100:
+        return True  # years
+    return False
+
+
+def number_provenance(markup: str, data_paths: list[Path]) -> dict[str, object]:
+    """Every non-trivial number shown in the report should exist in the data or metrics files."""
+    visible = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", markup, flags=re.I | re.S)
+    visible = re.sub(r"<[^>]+>", " ", visible)
+    shown = [item for item in _numeric_values(visible) if not _is_trivial_number(*item)]
+    source: list[float] = []
+    for data_path in data_paths:
+        source.extend(value for value, _, _ in _numeric_values(data_path.read_text(encoding="utf-8", errors="replace")))
+
+    def matches(value: float, decimals: int, percent: bool) -> bool:
+        tolerance = 0.5 * 10 ** (-decimals) + 1e-9
+        candidates = [value, value / 100] if percent else [value]
+        for target in candidates:
+            scale_tolerance = tolerance / 100 if (percent and target != value) else tolerance
+            if any(abs(item - target) <= scale_tolerance for item in source):
+                return True
+        return False
+
+    unmatched = sorted({f"{v:g}{'%' if pct else ''}" for v, d, pct in shown if not matches(v, d, pct)})
+    return {"data_files": [str(path) for path in data_paths], "checked": len(shown), "unmatched": unmatched}
+
+
 def occurrences(pattern: str, text: str, flags: int = re.I | re.S) -> int:
     return len(re.findall(pattern, text, flags))
 
@@ -36,7 +85,44 @@ def remote_urls(text: str) -> list[str]:
     return sorted(urls)
 
 
-def audit(path: Path, allow_remote: bool) -> dict[str, object]:
+def section_heading_alignment_violations(markup: str) -> dict[str, object]:
+    """Find section-heading CSS that breaks the default shared left edge."""
+    css = "\n".join(re.findall(r"<style\b[^>]*>(.*?)</style>", markup, re.I | re.S))
+    fixed_leading_columns: list[str] = []
+    non_left_alignment: list[str] = []
+    section_head_selector = re.compile(
+        r"(?:\.q-section-head\b|\.section-head\b|\[data-qiaomu-section-head(?:\]|[=\s]))",
+        re.I,
+    )
+    fixed_first_column = re.compile(
+        r"^\s*(?:"
+        r"\d+(?:\.\d+)?(?:px|rem|em|vw)|"
+        r"minmax\(\s*\d+(?:\.\d+)?(?:px|rem|em|vw)\s*,[^)]+\)"
+        r")\s+",
+        re.I,
+    )
+    for selector, declarations in re.findall(r"([^{}]+)\{([^{}]*)\}", css, re.S):
+        selector = selector.strip()
+        if not section_head_selector.search(selector):
+            continue
+        columns_match = re.search(r"grid-template-columns\s*:\s*([^;]+)", declarations, re.I)
+        if columns_match and fixed_first_column.search(columns_match.group(1)):
+            fixed_leading_columns.append(f"{selector}: {columns_match.group(1).strip()}")
+        alignment_match = re.search(r"text-align\s*:\s*(center|right|end)\b", declarations, re.I)
+        if alignment_match:
+            non_left_alignment.append(f"{selector}: {alignment_match.group(1).lower()}")
+    return {
+        "fixed_leading_column_rules": fixed_leading_columns,
+        "non_left_text_rules": non_left_alignment,
+    }
+
+
+def audit(
+    path: Path,
+    allow_remote: bool,
+    data_paths: list[Path] | None = None,
+    strict_numbers: bool = False,
+) -> dict[str, object]:
     text = path.read_text(encoding="utf-8")
     lower = text.lower()
     markup = re.sub(r"<script\b[^>]*>.*?</script>", "<script></script>", text, flags=re.I | re.S)
@@ -165,6 +251,13 @@ def audit(path: Path, allow_remote: bool) -> dict[str, object]:
             errors.append("CJK display title leading must use --display-leading-cjk at 1.08 or above")
         if cjk_document and not cjk_selector_uses_token:
             errors.append("CJK display title needs a language-aware selector using --display-leading-cjk")
+        section_alignment = section_heading_alignment_violations(markup)
+        section_alignment["policy"] = "section labels sit above headings; hero, headings, descriptions and primary content share a left edge"
+        style_checks["section_heading_alignment"] = section_alignment
+        if section_alignment["fixed_leading_column_rules"]:
+            errors.append("section headings must share the primary left edge; fixed leading section-head columns are forbidden")
+        if section_alignment["non_left_text_rules"]:
+            errors.append("section heading containers must remain left-aligned by default")
         chart_palette = re.findall(r"--chart-[1-8]\s*:\s*(#[0-9a-f]{6})", markup_lower)
         colorful_chart_tokens = []
         for value in chart_palette:
@@ -200,6 +293,16 @@ def audit(path: Path, allow_remote: bool) -> dict[str, object]:
     if not has_limit:
         warnings.append("no limitations or missing-evidence language detected")
 
+    if data_paths:
+        provenance = number_provenance(markup, data_paths)
+        checks["number_provenance"] = provenance
+        if provenance["unmatched"]:
+            message = (
+                f"numbers shown without a source in data/metrics files: {len(provenance['unmatched'])} "
+                f"({', '.join(provenance['unmatched'][:8])})"
+            )
+            (errors if strict_numbers else warnings).append(message)
+
     return {
         "ok": not errors,
         "file": str(path),
@@ -215,11 +318,16 @@ def main() -> None:
     parser.add_argument("html", type=Path, help="HTML report to audit")
     parser.add_argument("--allow-remote", action="store_true", help="Allow remote HTTP(S) assets")
     parser.add_argument("--json-output", type=Path, help="Optional JSON report path")
+    parser.add_argument("--data", type=Path, action="append", default=[], help="Data or computed-metrics file every shown number must come from (repeatable)")
+    parser.add_argument("--strict-numbers", action="store_true", help="Fail instead of warn when a shown number has no source")
     args = parser.parse_args()
 
     if not args.html.is_file():
         parser.error(f"HTML file not found: {args.html}")
-    result = audit(args.html, args.allow_remote)
+    for data_path in args.data:
+        if not data_path.is_file():
+            parser.error(f"data file not found: {data_path}")
+    result = audit(args.html, args.allow_remote, args.data, args.strict_numbers)
     rendered = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.json_output:
         args.json_output.parent.mkdir(parents=True, exist_ok=True)

@@ -19,8 +19,11 @@ output/
 - `<!doctype html>`、`lang`、viewport、非空 title、唯一 h1、main 区域。
 - CSS tokens 管理颜色、字号、间距、边界和宽度。
 - 默认 `<html data-qiaomu-style="vercel-monochrome">`，使用 `assets/styles/vercel-monochrome.css` 的黑白 tokens；自定义主题必须显式写成其他 profile 并在计划中说明。
+- 默认章节头保持统一左对齐：章节标签在标题上方，标签、标题、说明与主要内容共享容器左边线；审计会阻断固定前导栏造成的标题右移。
 - 统计口径、单位、日期、来源和 missing evidence 可见。
 - 图表有语义标签或文本/表格替代；无伪造数字和占位符。
+- 页面上的数字都能追溯到 `--data` 传入的原始数据或 `metrics.json`；`audit.json` 中 `number_provenance.unmatched` 为空。
+- 有动画时：离开视口暂停、reduced motion 下静止、读数变化通过 `aria-live` 播报。
 - 复杂图使用内置固定版本 runtime 与 recipes；只嵌入实际需要的 ECharts/D3，调用 `QiaomuCharts.ready()`。
 - 每个 `data-qiaomu-chart` 容器位于 `data-qiaomu-chart-figure` 中，具有 role/ARIA 与 figcaption。
 - 桌面与移动布局均无页面级横向滚动。
@@ -40,7 +43,7 @@ output/
 - 结论与受众用途
 - 数据范围、计算口径和限制
 - HTML、桌面截图、移动截图、计划、审计文件的绝对路径
-- 审计结果与人工检查结果
+- 审计结果（含 number_provenance 计数）与人工检查结果
 - 外部依赖、未验证项和 `missing evidence`
 
 不要声称统计正确、跨浏览器兼容或审美优秀，除非有对应证据。
